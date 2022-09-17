@@ -1,24 +1,22 @@
 
-main{
-    text-align: center;
-}
-ul {
-    margin-right: 600px;
-    list-style-position: inside;
-}
-hr{
+body{
+    margin: auto;
     width: 50%;
 }
+
+li {
+    margin: 10px;
+}
+
 
 img{
     margin-left: 20px;
     border-radius:5px;
 }
-h1{
-    margin-right: 330px;
-}
+
+
 h2{
-    margin-left: 30px;
+    margin: auto;
     text-align:center;
     font-family: Helvetica, Sans-Serif;
     font-size: 30px;
@@ -30,7 +28,6 @@ header{
     height: 250px;
     display:flex;
     align-items: center;
-    width: 50%;
     margin: auto;
     border-radius: 10px;
     
@@ -38,7 +35,6 @@ header{
 
 footer{
     background-color:#4973f0;
-    width: 50%;
     margin: 30px auto;
     text-align:center;
     padding: 7px 7px;
