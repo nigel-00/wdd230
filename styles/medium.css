@@ -1,0 +1,6 @@
+@media  only screen and (min-width: 32.5em){
+    h2{
+        font-size: 40px; 
+        margin: auto 50px;
+    }
+}
