@@ -1,0 +1,30 @@
+
+/* add margin to the outside and subtract padding from the inside*/
+* { -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; box-sizing:
+    border-box;
+}
+/* Style the html */
+html{
+    display: block;
+}
+/* style the body */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+/* style the header */
+header{
+    background-color: #1E2761;
+    color: #D9D8D5;
+    margin: 0;
+    text-align: center;
+    padding: .5rem 2%;
+}
+header h1{
+    margin: 0;
+}
+header h2{
+    margin: 0; 
+}
