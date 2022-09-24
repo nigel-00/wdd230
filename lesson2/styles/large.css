@@ -1,0 +1,18 @@
+@media only screen and (min-width: 1028px){
+    /* style the body*/
+    body{
+    font-size: 16px;
+    }   
+    /* style the maim  */
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    section:nth-child(3){
+        grid-column: span 1;
+    }
+    section:nth-child(3) h3{
+        margin: -.5rem -.42rem 1rem -.42rem;
+    } 
+    section a{ font-size: 12px;
+    }
+}/* end of media query*/

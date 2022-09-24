@@ -5,26 +5,109 @@
     border-box;
 }
 /* Style the html */
-html{
-    display: block;
-}
+
+
 /* style the body */
 body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    
 }
+
 /* style the header */
 header{
     background-color: #1E2761;
     color: #D9D8D5;
-    margin: 0;
+    margin: 1rem 0;
     text-align: center;
     padding: .5rem 2%;
 }
 header h1{
     margin: 0;
+   
 }
 header h2{
     margin: 0; 
+    font-size: 24px;
+}
+
+/* style the main */
+main{
+    display:grid;
+    grid-template-columns: 1fr;
+
+}
+main figure img {
+    width: 100%;
+    padding: 1rem 0;
+}
+main figure{
+    width: 100%;
+    margin: 0;
+
+}
+main section h3 {
+    background-color: #1E2761;
+    color: #D9D8D5; 
+    text-align: center;
+    margin: -.5rem -.35rem 1rem -.35rem;
+    padding: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+/* style the section */
+
+main section{
+    margin: .5rem ;
+    padding: .5rem 2%;
+    background-color: black;
+    white-space: normal;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}  
+section h4{
+    text-align: center;
+    color:#D9D8D5;
+}
+section a {
+    background-color:#1E2761;
+    color: white;
+    padding: .5em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 11px;
+    
+  }
+  
+  section a:hover {
+    background-color: #333;
+  }
+  
+  section a:active {
+    background-color: black;
+  }
+  
+
+p{
+    color:#D9D8D5; 
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        text-align: left;
+    
+}
+   
+/* style the footer */
+footer{
+    background-color: #1E2761;
+    color: #D9D8D5;
+    margin: .5rem 0;
+    text-align: center;
+    padding: .5rem;
 }
