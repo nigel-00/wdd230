@@ -15,9 +15,12 @@ body {
 /*----------- HEADER --------------*/
 header {
     padding: .5rem 2%;
-    background-color: #ddd;
-}
+    background-color: #76BC59;
+    display: grid;
+    grid-template-columns: 75px auto;
 
+}
+header div {margin-left: 10px;}
 header h1 {margin: 0;}
 header h2 {margin: 0; font-weight: normal;}
 
@@ -58,7 +61,7 @@ main {
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #ddd;
+    background-color: #76BC59;
     padding: .5rem 2%;
     text-align: center;
 }
