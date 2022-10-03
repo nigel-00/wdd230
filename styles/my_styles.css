@@ -24,7 +24,7 @@ h2{
 
 }
 header{
-    background-color: #4973f0;
+    background-color: #002E5D;
     height: 250px;
     display:flex;
     align-items: center;
@@ -34,7 +34,7 @@ header{
 }
 
 footer{
-    background-color:#4973f0;
+    background-color:#002E5D;
     margin: 30px auto;
     text-align:center;
     padding: 7px 7px;
