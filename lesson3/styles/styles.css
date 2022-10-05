@@ -24,8 +24,6 @@ header {
     display: grid;
     grid-template-columns: 75px auto;
     color: #D9D8D5;
-    height: 15rem;
-    
 
 }
 header div {margin: auto;}

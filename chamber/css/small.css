@@ -1,0 +1,122 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* style the body */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin: auto;
+    width: 100%;
+    text-align: center;    
+}
+
+
+/* styling the header */
+header {
+    padding: .5rem;
+    background-color: #002E5D;
+    display: grid;
+    grid-template-columns: 75px auto;
+    color: #D9D8D5;
+
+}
+
+header div {margin: auto;}
+header h1 { margin: 0;
+            padding-left: 7rem;
+        }
+
+header figure img{
+    width: 9rem;
+    border-radius: 50%;
+}
+
+nav button{
+    /* veiw width removes it from the left side of the screen */
+    margin: .2rem 2vw;
+    background:#002E5D;
+    border: none;
+    font-size: 2rem;
+    color: #555; 
+
+}
+
+nav{
+    background-color: #800020;
+}
+/* removing the dots of the ul  */
+nav ul {
+    list-style-type: none;
+    /* remove large spaces at the beginning of the navigation  */
+    padding: 0; 
+    margin: 0; 
+}
+
+nav ul li a {
+    /* make the anchors cliclable */
+    display : block; 
+    padding: .8rem 2vw; 
+    /* removes the underline */
+    text-decoration: none ;
+    color: #D9D8D5;
+    text-align: center;
+   
+}
+nav ul li.active a {
+    background-color: #000;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: #DCD1D1;
+    color: #333;
+
+}
+nav ul {display: none;}
+nav ul.open{display: block;}
+
+#hamburgerBtn span:nth-child(1) {
+    display: block;
+    color:#D9D8D5;
+    margin: .2rem;
+}
+
+#hamburgerBtn span:nth-child(2) {
+    display: none;
+    color:#D9D8D5;
+    margin: .2rem;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(2) {
+    display: block;
+}
+/* style the logo image */
+
+img{
+    width:50%;
+    margin: 2rem;
+}
+
+
+/* .logo{
+    width: 9rem;
+    border-radius: 50%;
+} */ 
+
+/* style the footer */
+footer{
+    background-color:#002E5D;
+    color: #D9D8D5;
+    margin: .5rem 0;
+    text-align: center;
+    padding: 1.5rem;
+   
+}
