@@ -1,0 +1,7 @@
+@media only screen and (min-width: 64rem){
+ 
+nav ul li{
+    padding: .5rem 1rem;
+}
+}
+/* end of large */
