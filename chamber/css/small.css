@@ -8,45 +8,71 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 10px;
     margin: auto;
     width: 100%;
-    text-align: center;    
+        
 }
 
 
 /* styling the header */
 header {
-    padding: .5rem;
+    display: flex;
+    padding: 2rem 0;
     background-color: #002E5D;
-    display: grid;
-    grid-template-columns: 75px auto;
     color: #D9D8D5;
+    align-content: left;
+    justify-content: center;
 
 }
 
-header div {margin: auto;}
-header h1 { margin: 0;
-            padding-left: 7rem;
-        }
+.header-content{
+    display:flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    line-height: 10px;
+    text-align: center;
+}
+header .header-content h2{
+    margin-top:.5rem;
+}
 
-header figure img{
-    width: 9rem;
+#currDate{
+    background-color:#800020 ;
+    padding: 1rem;
+    width: 50%;
+    margin-left: 5rem;
+    border-radius: 5px;
+    margin-top:.7rem;
+}
+#currDate:hover{
+    background-color: #DCD1D1;
+    color: #333;
+}
+/* style the logo image */
+header .logo-image img{
+    width: 8rem;
     border-radius: 50%;
+    margin:auto;
+    padding: auto;
 }
+/* style the chamber of commerce name and motto */
 
 nav button{
     /* veiw width removes it from the left side of the screen */
     margin: .2rem 2vw;
-    background:#002E5D;
+    background: transparent;
     border: none;
     font-size: 2rem;
     color: #555; 
+    border-radius: 10px;
 
 }
 
 nav{
     background-color: #800020;
+    display: grid;
+   
 }
 /* removing the dots of the ul  */
 nav ul {
@@ -63,18 +89,20 @@ nav ul li a {
     /* removes the underline */
     text-decoration: none ;
     color: #D9D8D5;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
     text-align: center;
    
 }
 nav ul li.active a {
-    background-color: #000;
+    background-color: #002E5D ;
     color: #fff;
+   
 }
 
 nav ul li a:hover {
     background-color: #DCD1D1;
     color: #333;
-
+    
 }
 nav ul {display: none;}
 nav ul.open{display: block;}
@@ -98,18 +126,18 @@ nav ul.open{display: block;}
 #hamburgerBtn.open span:nth-child(2) {
     display: block;
 }
-/* style the logo image */
 
-img{
-    width:50%;
-    margin: 2rem;
+.social-media{
+    margin: 1rem ;
+    color:#DCD1D1; 
+    text-align: center;
+   
+}
+nav div i:hover{
+    background-color:#002E5D ;
+    border-radius: 10px;
 }
 
-
-/* .logo{
-    width: 9rem;
-    border-radius: 50%;
-} */ 
 
 /* style the footer */
 footer{
@@ -119,4 +147,23 @@ footer{
     text-align: center;
     padding: 1.5rem;
    
+}
+nav div i{
+    font-size: 2rem;
+    padding: 5px;
+}
+.logo-image img{
+    width: 5rem;
+    border-radius: 50%;
+    margin:auto;
+    padding: auto;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color:rgba(0, 0, 0, 0.3) ;
+    margin-top:1rem;
+    height:100%;
+    width: 100%;
 }

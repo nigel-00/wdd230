@@ -1,7 +1,45 @@
 @media only screen and (min-width: 35rem){
+    /* style the body */
+    body {
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        margin: auto;
+        width: 100%;
+        text-align: center;    
+    }
+    /* styling the header */
+    header {
+        display: flex;
+        padding: 2rem 0;
+        background-color: #002E5D;
+        color: #D9D8D5;
+
+
+    }
+
+
+header .logo-image img{
+        width: 9rem;
+        border-radius: 50%;
+    }
+
+    #currDate{
+       
+        margin-left: 7rem;
+       
+    }
+    
     /* get rid of the humburger icon  */
     nav button{
         display: none;
+        margin: 1rem;
+    }
+    nav .social-media{
+        display: inline-block;
+        margin-top: -37px;
+        margin-left: auto;
+
     }
 
     nav #primaryNav{
@@ -9,11 +47,17 @@
         display: flex;
         justify-content: flex-start;
         margin-left: 2vw;
-        border-left: 1px solid rgba(0,0,0,0.3);
+        border-right: 1px solid rgba(0,0,0,0.3);
     }
     nav ul li a {
         border: none; 
         border-right: 1px solid rgba(0,0,0,0.3);
     }
+    nav ul li.active a {
+        border-radius: 5px;
+    }
+
+    nav ul li a:hover {
+        border-radius: 5px;
 }
 /* end of medium */

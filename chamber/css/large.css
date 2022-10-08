@@ -1,5 +1,40 @@
 @media only screen and (min-width: 64rem){
- 
+    /* style the body */
+    body {
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        margin: auto;
+        width: 100%;
+        text-align: center;    
+    }
+
+    /* styling the header */
+    header {
+        display: flex;
+        padding: 2rem 0;
+        background-color: #002E5D;
+        color: #D9D8D5;
+
+    }
+
+header .logo-image img{
+        width: 9rem;
+        border-radius: 50%;
+    }
+
+    #currDate{
+
+        margin-left: 7rem;
+       
+    }
+
+    nav .social-media{
+        display: inline-block;
+        margin-top: -50px;
+        margin-left: auto;
+
+    }
     nav ul li{
         padding: .5rem 1rem;
     }
