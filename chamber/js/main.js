@@ -4,16 +4,17 @@ const fullYear = todayDate.getFullYear();
 //get the date, date, month, year 
 
 // select the elements to manipulate (output to)
-const datefield = document.querySelector("#fullDate");
+const datefieldUK = document.querySelector("#fullDateUK");
 
 // derive the current date using a date object
 const now = new Date();
-const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
-	now
-);
 
-datefield.innerHTML = fulldate;
+const fulldateUK = new Intl.DateTimeFormat("en-UK", {
+	dateStyle: "full"
+}).format(now);
 
+
+datefieldUK.innerHTML = fulldateUK;
 
 //concatinate the full year with the copyright sign 
 document.querySelector('#fullYear').textContent = fullYear;

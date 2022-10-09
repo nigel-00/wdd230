@@ -8,55 +8,83 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
-    font-size: 10px;
+    font-size: 16px;
     margin: auto;
     width: 100%;
         
 }
-
-
 /* styling the header */
 header {
     display: flex;
-    padding: 2rem 0;
     background-color: #002E5D;
     color: #D9D8D5;
-    align-content: left;
-    justify-content: center;
+    padding: 5px 0;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+/* style the chamber name and slogan */
+.logo-heading {
+	display: flex;
+	align-items: center;
+	margin:0 1rem;;
+}
+.logo-heading h1 {
+	font-size: 1.5rem;
+}
+.m {
+	letter-spacing: 1pt;
+	font-weight: 700;
+	font-size: 0.8rem;
+    font-style: italic;
+}
+
+.header-content  {
+	display: flex;
+	flex-direction: column;
+	margin-left: .5rem;
+    padding: 2px;
+}
+
+/* style the logo image */
+header img{
+    width: 100px;
+	height: auto;
+    border-radius: 50%;
+    margin: .2rem 2vw;
 
 }
 
-.header-content{
-    display:flex;
-    flex-direction: column;
-    margin-left: 1rem;
-    line-height: 10px;
-    text-align: center;
-}
-header .header-content h2{
-    margin-top:.5rem;
-}
-
+/* style the current date */
 #currDate{
-    background-color:#800020 ;
+    background-color:#002E5D;
     padding: 1rem;
-    width: 50%;
-    margin-left: 5rem;
-    border-radius: 5px;
-    margin-top:.7rem;
+    width: 100%;
+    text-align: center;
+    color: #DCD1D1;
+    font-size: small;
+
 }
+/* Apply the hover color to the date */
 #currDate:hover{
     background-color: #DCD1D1;
-    color: #333;
+    color: #000;
 }
-/* style the logo image */
-header .logo-image img{
-    width: 8rem;
-    border-radius: 50%;
-    margin:auto;
-    padding: auto;
+
+/* style the social media  */
+.social-media{
+    color:#002E5D; 
+    font-size: 1.5rem; 
+    text-align: center;
 }
-/* style the chamber of commerce name and motto */
+.social-media i{
+    padding: .2rem;
+}
+/* social media hoover color */
+.social-media i:hover{
+    color: #D9D8D5;
+}
 
 nav button{
     /* veiw width removes it from the left side of the screen */
@@ -66,6 +94,7 @@ nav button{
     font-size: 2rem;
     color: #555; 
     border-radius: 10px;
+    text-align: left;
 
 }
 
@@ -110,13 +139,13 @@ nav ul.open{display: block;}
 #hamburgerBtn span:nth-child(1) {
     display: block;
     color:#D9D8D5;
-    margin: .2rem;
+    margin: .2rem 2vw;
 }
 
 #hamburgerBtn span:nth-child(2) {
     display: none;
     color:#D9D8D5;
-    margin: .2rem;
+    margin: .2rem 2vw;
 }
 
 #hamburgerBtn.open span:nth-child(1) {
@@ -127,17 +156,11 @@ nav ul.open{display: block;}
     display: block;
 }
 
-.social-media{
-    margin: 1rem ;
-    color:#DCD1D1; 
-    text-align: center;
-   
-}
+
 nav div i:hover{
     background-color:#002E5D ;
     border-radius: 10px;
 }
-
 
 /* style the footer */
 footer{

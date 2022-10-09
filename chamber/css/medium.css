@@ -14,44 +14,20 @@
         padding: 2rem 0;
         background-color: #002E5D;
         color: #D9D8D5;
-
-
     }
 
-
-header .logo-image img{
-        width: 9rem;
-        border-radius: 50%;
-    }
-
-    #currDate{
+    #currDate{width: 100%;}
        
-        margin-left: 7rem;
-       
-    }
-    
-    /* get rid of the humburger icon  */
-    nav button{
-        display: none;
-        margin: 1rem;
-    }
-    nav .social-media{
-        display: inline-block;
-        margin-top: -37px;
-        margin-left: auto;
-
-    }
-
-    nav #primaryNav{
-        /* justify-content can change where the nav menu is located in screen */
-        display: flex;
-        justify-content: flex-start;
-        margin-left: 2vw;
-        border-right: 1px solid rgba(0,0,0,0.3);
-    }
     nav ul li a {
-        border: none; 
-        border-right: 1px solid rgba(0,0,0,0.3);
+        /* make the anchors clicable */
+        display : block; 
+        padding: .8rem 2vw; 
+        /* removes the underline */
+        text-decoration: none ;
+        color: #D9D8D5;
+        border-top: 1px solid rgba(0, 0, 0, 0.5);
+        text-align: center;
+
     }
     nav ul li.active a {
         border-radius: 5px;
@@ -60,4 +36,5 @@ header .logo-image img{
     nav ul li a:hover {
         border-radius: 5px;
 }
-/* end of medium */
+ 
+}/* End of media query */

@@ -9,34 +9,23 @@
         text-align: center;    
     }
 
-    /* styling the header */
-    header {
+    nav button {
+        display: none;
+    }
+    nav ul {
         display: flex;
-        padding: 2rem 0;
-        background-color: #002E5D;
-        color: #D9D8D5;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 2vw;
+        border-left: 1px solid rgba(0,0,0,0.5);
 
     }
 
-header .logo-image img{
-        width: 9rem;
-        border-radius: 50%;
-    }
-
-    #currDate{
-
-        margin-left: 7rem;
-       
-    }
-
-    nav .social-media{
-        display: inline-block;
-        margin-top: -50px;
-        margin-left: auto;
-
-    }
-    nav ul li{
+    nav ul li a{
+        border: none;
         padding: .5rem 1rem;
+        border-right: 1px solid rgba(0,0,0,0.5);
     }
-    }
-    /* end of large */
+
+
+}
