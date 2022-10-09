@@ -77,6 +77,9 @@ header img{
     color:#002E5D; 
     font-size: 1.5rem; 
     text-align: center;
+    padding-bottom: 1rem;
+
+
 }
 .social-media i{
     padding: .2rem;
@@ -161,7 +164,19 @@ nav div i:hover{
     background-color:#002E5D ;
     border-radius: 10px;
 }
-
+/* style the main */
+main{
+    margin: 12px;
+}
+main div{
+    background-color:#c0c0c0;
+    width: 100%;
+    height:150px;
+}
+main p{
+    text-align: center;
+    padding: 4rem;
+}
 /* style the footer */
 footer{
     background-color:#002E5D;
@@ -182,11 +197,7 @@ nav div i{
     padding: auto;
 }
 
-section{
-    display: grid;
-    grid-template-columns: 1fr;
-    background-color:rgba(0, 0, 0, 0.3) ;
-    margin-top:1rem;
-    height:100%;
-    width: 100%;
+
+.map-link{
+    color: #D9D8D5;
 }
