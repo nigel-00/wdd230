@@ -31,3 +31,35 @@ function toggleMenu(){
 
 const x = document.getElementById('hamburgerBtn');
 x.onclick = toggleMenu;
+
+// image couresel
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+
+// create a message pop up 
+//get a date 
+const today = new Date();
+//get the actual day ---number
+const dayNumber = today.getDay();
+//get the events id
+const  element = document.getElementById("event");
+
+if (dayNumber == 4 || dayNumber == 2) {
+    element.classList.add("showme");
+  } else {
+    element.classList.add("hideme");
+  }
+
+

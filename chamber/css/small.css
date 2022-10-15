@@ -139,6 +139,8 @@ nav ul li a:hover {
 nav ul {display: none;}
 nav ul.open{display: block;}
 
+/* stlying the humburger menu */
+
 #hamburgerBtn span:nth-child(1) {
     display: block;
     color:#D9D8D5;
@@ -171,7 +173,7 @@ main{
 main div{
     background-color:#c0c0c0;
     width: 100%;
-    height:150px;
+   
 }
 main p{
     text-align: center;
@@ -194,10 +196,61 @@ nav div i{
     width: 5rem;
     border-radius: 50%;
     margin:auto;
-    padding: auto;
+    padding: 0;
 }
-
 
 .map-link{
     color: #D9D8D5;
 }
+
+/* styling the couresel */
+
+/* make the images adaptable */
+.hero-action{
+    margin: 0;
+    width: 100%;
+    position: relative;
+  
+}
+
+.hero-action figure{
+    margin: 0;
+    width: 100%;
+}
+.hero-action figure img{
+    width: 100%;
+    height: auto;
+   
+}
+.join-btn{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: #800020;
+}
+
+/* hide the images by default */
+.mySlides {
+    display: none;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }  
+
+/* style the event message */
+div#event{
+    background-color: #800020;
+    border: 5px solid #002E5D;
+    color: #DCD1D1;
+}
+
+div.showme {display:block;}
+div.hideme {display:none;}
