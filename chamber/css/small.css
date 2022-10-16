@@ -173,6 +173,7 @@ main{
 main div{
     background-color:#c0c0c0;
     width: 100%;
+    height:auto;
    
 }
 main p{
@@ -206,28 +207,36 @@ nav div i{
 /* styling the couresel */
 
 /* make the images adaptable */
-.hero-action{
-    margin: 0;
-    width: 100%;
-    position: relative;
-  
-}
 
-.hero-action figure{
-    margin: 0;
-    width: 100%;
-}
+
 .hero-action figure img{
     width: 100%;
     height: auto;
-   
 }
-.join-btn{
+
+
+#event-inv{
     position: absolute;
-    left: 50%;
-    top: 50%;
-    background: #800020;
+    top: 20px;
+    right: 10px;
+    background: radial-gradient(rgb(224, 203, 203),#002E5D );
+    border: 1px solid rgba(0,0,0,.1);
+    box-shadow: 0 0 30px #333;
+    opacity: 1;
+    width: 30%;
+    height: auto;
+    padding: 1rem;
 }
+.join{
+    
+    background: #800020;
+    color:#D9D8D5;
+}
+.news{
+    background-color: #002E5D;
+    color:#DCD1D1;
+}
+
 
 /* hide the images by default */
 .mySlides {
@@ -254,3 +263,20 @@ div#event{
 
 div.showme {display:block;}
 div.hideme {display:none;}
+
+.weather{
+    background-color: #002E5D;
+    color: #DCD1D1;
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+}
+.weather p{
+    padding:0;
+    margin: 1rem;
+}
+.fa {
+    font-size: 40px;
+    color:#D9D8D5; 
+    padding: .5rem;  
+}

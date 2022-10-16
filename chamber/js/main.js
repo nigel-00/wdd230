@@ -54,9 +54,9 @@ const today = new Date();
 //get the actual day ---number
 const dayNumber = today.getDay();
 //get the events id
-const  element = document.getElementById("event");
+const  element = document.getElementById("event-inv");
 
-if (dayNumber == 4 || dayNumber == 2) {
+if (dayNumber ==  6 || dayNumber == 2) {
     element.classList.add("showme");
   } else {
     element.classList.add("hideme");
