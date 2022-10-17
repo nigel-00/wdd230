@@ -50,8 +50,16 @@
         grid-column-start: 1;
         grid-column-end: 3;
     
-        }
-    
+    }
+    .hero-action div img{
+        
+        height: 350px;
+    }
+    .join-chamber button{
+        top: 280px;
+        right: 280px;
+    }
+
   
     .join { 
         grid-row: 5;

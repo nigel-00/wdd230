@@ -51,7 +51,13 @@
         grid-column-start: 2;
         grid-column-end: 5;
      }
-   
+    .hero-action div img{
+        height: 800px;
+    }
+    .join-chamber button{
+        top: 500px;
+        right: 200px;
+    }
      .news {    
         grid-row: 4;
         grid-column-start: 2;

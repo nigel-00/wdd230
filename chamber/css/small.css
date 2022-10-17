@@ -204,14 +204,17 @@ nav div i{
     color: #D9D8D5;
 }
 
-/* styling the couresel */
+/* position event box on hero section  */
+.hero-action{
+    position: relative;
+    background-color: #002E5D;
+}
 
 /* make the images adaptable */
-
-
-.hero-action figure img{
+.hero-action div img{
+    margin: 0;
     width: 100%;
-    height: auto;
+    height: 250px;
 }
 
 
@@ -227,16 +230,65 @@ nav div i{
     height: auto;
     padding: 1rem;
 }
+.join-chamber button{
+    background-color: #800020;
+    padding: 1rem 3.5rem;
+    border: 5px solid #002E5D;
+    border-radius: 10px;
+    color: #DCD1D1;
+    position: absolute;
+    top: 280px;
+    right: 150px;
+}
+.join-chamber button:hover{
+    background-color: #002E5D;
+}
 .join{
     
-    background: #800020;
+    background: #002E5D;
     color:#D9D8D5;
 }
+.join img{
+    height: 180px;
+    width: 100%;
+    padding: .2rem;
+}
+
 .news{
     background-color: #002E5D;
     color:#DCD1D1;
+    padding: 1px;
 }
 
+
+
+/* style the spotlight first div */ 
+.spotlight-first{
+    background-color: #002E5D;
+    color:#DCD1D1;
+  
+}
+
+/* spotlight first image */
+.spotlight-first img{
+    height: 180px;
+    width: 100%;
+    padding: .2rem;
+}
+/* spotlight second div */
+.spotlight-sec{
+  
+   background-color: #002E5D;
+   color:#D9D8D5;
+
+}
+
+.spotlight-sec img{
+    height: 180px;
+    width: 100%;
+    padding: .2rem;
+
+}
 
 /* hide the images by default */
 .mySlides {
@@ -268,7 +320,6 @@ div.hideme {display:none;}
     background-color: #002E5D;
     color: #DCD1D1;
     text-align: center;
-    margin: auto;
     padding: 1rem;
 }
 .weather p{
@@ -279,4 +330,8 @@ div.hideme {display:none;}
     font-size: 40px;
     color:#D9D8D5; 
     padding: .5rem;  
+}
+.event{
+    background-color: #002E5D;
+    color:#D9D8D5;
 }
