@@ -77,14 +77,17 @@
         grid-column-end: 6;
     
     }
-    .event {     
+    .join {     
         grid-row: 4;
         grid-column-start: 1;
         grid-column-end: 2;
-    
-     }
 
-    .join {     
+     }
+     .join-chamber{
+        padding: 1rem 3.5rem;
+    }
+
+    .event {     
         grid-row: 2;
         grid-column-start: 1;
         grid-column-end: 2;

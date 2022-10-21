@@ -239,13 +239,16 @@ main picture img{
     height: auto;
     padding: 1rem;
 }
-.welcome-text{
+.join-chamber{
     position: absolute;
-    color: white;
-    font-weight: 50px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: #800020;
+    padding: 1rem 1rem;
+    border: 5px solid #002E5D;
+    border-radius: 10px;
+    color: #DCD1D1;
 }
 
 
