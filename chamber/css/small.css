@@ -11,6 +11,7 @@ body {
     font-size: 16px;
     margin: auto;
     width: 100%;
+    background-color:#800020;
         
 }
 /* styling the header */
@@ -78,8 +79,6 @@ header img{
     font-size: 1.5rem; 
     text-align: center;
     padding-bottom: 1rem;
-
-
 }
 .social-media i{
     padding: .2rem;
@@ -161,7 +160,6 @@ nav ul.open{display: block;}
     display: block;
 }
 
-
 nav div i:hover{
     background-color:#002E5D ;
     border-radius: 10px;
@@ -169,13 +167,10 @@ nav div i:hover{
 /* style the main */
 main{
     margin: 12px;
+    margin: 5px;
 }
-main div{
-    background-color:#c0c0c0;
-    width: 100%;
-    height:auto;
-   
-}
+
+
 main p{
     text-align: center;
     padding: 4rem;
@@ -204,6 +199,10 @@ nav div i{
     color: #D9D8D5;
 }
 
+main picture img{
+    width: 100%;
+}
+
 /* position event box on hero section  */
 .hero-action{
     position: relative;
@@ -217,50 +216,85 @@ nav div i{
     height: 250px;
 }
 
+.hero-action picture{
+    width: 100%;
+    height: auto;
+
+}
+.hero-action picture img{
+    width: 100%;
+    height: auto;
+}
+
 
 #event-inv{
     position: absolute;
+    color: #D9D8D5;
     top: 20px;
     right: 10px;
-    background: radial-gradient(rgb(224, 203, 203),#002E5D );
-    border: 1px solid rgba(0,0,0,.1);
+    background-color:#002E5D ;
     box-shadow: 0 0 30px #333;
     opacity: 1;
     width: 30%;
     height: auto;
     padding: 1rem;
 }
-.join-chamber button{
+.welcome-text{
+    position: absolute;
+    color: white;
+    font-weight: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.join{
+    text-align: center;
+    background: #002E5D;
+    color:#D9D8D5;
+    padding-top: 1rem;
+}
+
+.join-us-btn{
     background-color: #800020;
     padding: 1rem 3.5rem;
     border: 5px solid #002E5D;
     border-radius: 10px;
     color: #DCD1D1;
-    position: absolute;
-    top: 280px;
-    right: 150px;
-}
-.join-chamber button:hover{
-    background-color: #002E5D;
-}
-.join{
+    margin:1rem;
     
-    background: #002E5D;
-    color:#D9D8D5;
 }
-.join img{
-    height: 180px;
-    width: 100%;
-    padding: .2rem;
+.join-us-btn:hover{
+    background-color:#9f4f40;
+}
+/* style the weather */
+.weather{
+    background-color: #002E5D;
+    color: #DCD1D1;
+    text-align: center;
+    
+}
+.weather h2{
+    padding: 1rem;
+}
+.weather hr{
+   width: 80%;
+}
+.weather p{
+    padding: .5rem;
 }
 
+
+/* style the news */
 .news{
     background-color: #002E5D;
     color:#DCD1D1;
     padding: 1px;
 }
-
-
+.news h2{
+    text-align: center;
+}
 
 /* style the spotlight first div */ 
 .spotlight-first{
@@ -271,8 +305,8 @@ nav div i{
 
 /* spotlight first image */
 .spotlight-first img{
-    height: 180px;
     width: 100%;
+    height: 210px;
     padding: .2rem;
 }
 /* spotlight second div */
@@ -283,9 +317,10 @@ nav div i{
 
 }
 
-.spotlight-sec img{
-    height: 180px;
+.spotlight-sec picture img{
+    display: block;
     width: 100%;
+    height: 210px;
     padding: .2rem;
 
 }
@@ -316,16 +351,7 @@ div#event{
 div.showme {display:block;}
 div.hideme {display:none;}
 
-.weather{
-    background-color: #002E5D;
-    color: #DCD1D1;
-    text-align: center;
-    padding: 1rem;
-}
-.weather p{
-    padding:0;
-    margin: 1rem;
-}
+
 .fa {
     font-size: 40px;
     color:#D9D8D5; 

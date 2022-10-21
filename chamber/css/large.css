@@ -32,32 +32,32 @@
     }
 
     .social-media{
-     
         width: 1040px;
         text-align: right;
         margin: 1rem auto;
-       
+   
     }
 
-    main {
+    .main-divs {
         display: grid;
         grid-template-columns: repeat(5, auto);
         gap: 10px;
     }
-        
+    
     .hero-action {  
         grid-row-start: 2;
         grid-row-end: 4;
         grid-column-start: 2;
         grid-column-end: 5;
      }
-    .hero-action div img{
-        height: 800px;
+
+     .hero-action div picture{
+        height: auto;
     }
-    .join-chamber button{
-        top: 500px;
-        right: 200px;
+     .hero-action div picture img{
+        height: 820px;
     }
+    
      .news {    
         grid-row: 4;
         grid-column-start: 2;
@@ -77,14 +77,14 @@
         grid-column-end: 6;
     
     }
-    .join {     
+    .event {     
         grid-row: 4;
         grid-column-start: 1;
         grid-column-end: 2;
     
      }
 
-    .event {     
+    .join {     
         grid-row: 2;
         grid-column-start: 1;
         grid-column-end: 2;

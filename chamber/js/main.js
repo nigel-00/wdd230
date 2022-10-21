@@ -56,7 +56,7 @@ const dayNumber = today.getDay();
 //get the events id
 const  element = document.getElementById("event-inv");
 //display the event if its either monday or tuesday
-if (dayNumber ==  1 || dayNumber == 2) {
+if (dayNumber ==  1 || dayNumber == 5) {
     element.classList.add("showme");
   } else {
     element.classList.add("hideme");

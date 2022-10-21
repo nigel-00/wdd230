@@ -39,7 +39,7 @@
     }
 
 
-    main {
+    .main-divs{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
@@ -51,17 +51,12 @@
         grid-column-end: 3;
     
     }
-    .hero-action div img{
+    .hero-action div picture img{
         
-        height: 350px;
+        height: auto;
     }
-    .join-chamber button{
-        top: 280px;
-        right: 280px;
-    }
-
-  
-    .join { 
+   
+    .news { 
         grid-row: 5;
         grid-column-start: 1;
         grid-column-end: 3;
@@ -75,7 +70,7 @@
         grid-column: 2/2;
 
     }
-    .news {   
+    .join {   
         grid-row: 3;
         grid-column-start: 1;
         grid-column-end: 3;

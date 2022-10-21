@@ -30,7 +30,7 @@
 <!-- HEADER HERE -->
 <header>
     <div class="logo-heading">
-        <img  class="logo-image" src="images/vic_logo.png" alt="logo">
+        <img  class="logo-image" src="images/logo-image-vic.webp" alt="logo">
         <div class="header-content">
             <h1>Victoria Falls Chamber of Commerce</h1>
             <q class="m">Business Empowerment Driven!</q>
@@ -58,68 +58,89 @@
     
         
     <!-- CONTENT HERE -->
-        <main>
-            
+    <main>    
+      <picture class="main-pic">
+        <source media="(max-width: 400px)" srcset="images/hero-image-400.jpg">
+        <source media="(max-width: 650px)" srcset="images/hero-image-650.jpg">
+        <source media="(max-width: 900px)" srcset="images/hero-image-900.jpg">
+        <img src="images/hero-image-def.jpg" alt="people">
+    </picture>
+    <!-- grid div -->
+  <div class="main-divs">
+
     <!-- Slideshow container -->
     <div class="hero-action">
 
         <!-- Full-width images with number and caption text -->
+    
         <div class="mySlides fade">
-      
-          <img src="images/vic-falls-1.jpg" alt="vic-falls-image">
-        
-        </div>
-      
-        <div class="mySlides fade">
-           
-          <img src="images/vic-falls-2.jpeg" alt="vic-falls-image-2">
-        
-        </div>
-      
-        <div class="mySlides fade">
+          <picture class="vic-first">
+            <source media="(max-width: 400px)" srcset="images/vic-falls-400.jpeg">
+            <source media="(max-width: 650px)" srcset="images/vic-falls-650.jpeg">
+            <source media="(max-width: 900px)" srcset="images/vic-falls-900.jpeg">
+            <img src="images/vic-falls-2.jpeg" alt="the falls 1">
+        </picture>
           
-          <img src="images/vic-falls-3.jpg"  alt ="vic-falls-image-3">
-        
+        </div>
+      
+        <div class="mySlides fade">
+          <picture class="vic-sec">
+            <source media="(max-width: 400px)" srcset="images/vic-falls-3-400.jpg">
+            <source media="(max-width: 650px)" srcset="images/vic-falls-3-650.jpg">
+            <source media="(max-width: 900px)" srcset="images/vic-falls-3-900.jpg">
+            <img src="images/vic-falls-3.jpg" alt="the falls 2">
+        </picture>
+        <h3 class="welcome-text">Welcome to Victoria Falls</h3>
         </div>
        
         <div id="event-inv"><i class="fa-sharp fa-solid fa-handshake"></i>
           Come join us for the chamber meet and greet Wednesday at 7:00 p.m
         </div>
-        <div class="join-chamber">
-          <button>Join Chamber</button>
-        </div>
+       
         
+    </div>
+    <div class="join">
+      <button class="join-us-btn">Join </button>
+      <p>Join us today! The chamber initiates numerous monthly 
+        business-to-business opportunities 
+        for networking and connecting with other local business professionals.</p>
+      
     </div>
 
     <div class="weather">
-      <h1>weather</h1>
-      <p><i class="fa fa-cloud"></i>  33<span>&#8451;</span></p>
+      <h2>weather</h2>
+      <p><i class="fa fa-cloud"></i><span id="temp">34</span>&deg;</p>
       <hr>
       <p class="weather status" >Partly Cloudy</p>
-      <p>Wind Speed: 25km/hr</p>
-      <p>Wind Chill: N/A</p>
+      <p>Wind Speed: <span id="speed">60</span>mph</p>
+      <p>Wind Chill: <span id="chill">N/A</span></p>
     
     </div>
 
-  <div class="join">
-    <img src="images/event-image.jpg" alt="join-us-image">
-    <p>Our wonderful warm welcoming chamber always welcomes you!</p>
-    
-  </div>
+
   
   <div class="spotlight-first">
-    <img src="images/code-image.jpg"  alt="coding-bootcamp-image">
+    <picture class="makert">
+      <source media="(max-width: 300px)" srcset="images/coding-image-300.jpg">
+      <source media="(max-width: 500px)" srcset="images/coding-image-500.jpg">
+      <img src="images/coding-image.jpg" alt="farmers makert image ">
+  </picture>
     <p>The Falls after school coding instructional program!</p>
   </div>
 
   <div class="spotlight-sec">
-    <img src="images/farmers-makert.jfif"  alt="farmers-makert-image">
+    <picture class="makert">
+      <source media="(max-width: 300px)" srcset="images/farmers-makert-300.jpg">
+      <source media="(max-width: 500px)" srcset="images/farmers-makert-500.jpg">
+      <img src="images/farmers makert.jpg" alt="farmers makert image ">
+  </picture>
+    
     <p>Fresh produce from the falls with the best price!</p>
   </div>
 
 
   <div class="news">
-    <h3>News</h3>
+    <h2>News</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
       et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqui
       ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
@@ -132,16 +153,16 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
       et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p> 
   </div>
-
-                
-    </main>
+</div>
+           
+</main>
         
 <!-- FOOTER HERE -->   
     <footer>
        
         <div class="start">
             <div class="logo-image">
-                <img src="images/vic_logo.png" alt="logo">
+                <img src="images/logo-image-vic.webp" alt="logo">
             </div>
             <div class="footer-text-address">
             <h3>Victoria Falls Chamber of Commerce</h3>
@@ -161,6 +182,7 @@
     </footer>
     
 <script src="js/main.js"></script>
+<script src="js/windchill.js"></script>
 
 </body>
 </html>
