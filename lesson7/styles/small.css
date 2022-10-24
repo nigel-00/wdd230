@@ -1,0 +1,7 @@
+main {
+    display: grid;
+    grid-template-columns:1fr;
+    text-align: center;
+    gap: 1em;
+    font-family: sans-serif;
+}
