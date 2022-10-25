@@ -4,4 +4,6 @@ main {
     text-align: center;
     gap: 1em;
     font-family: sans-serif;
+    background-color: #002E5D;
+    color: #fff;
 }
