@@ -105,6 +105,13 @@
         right: 10px;
     }
 
+    /* style the discover page */
+
+.card-div{
+    display: flex;
+
+}
+
 
     }
 
