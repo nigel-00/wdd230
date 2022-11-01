@@ -1,6 +1,8 @@
-table {
+.center {
     font-family: arial, sans-serif;
-    border: 1px solid #800020;
+    margin: 20vh auto;
+    width: 50%;
+   
   }
 
   caption {
