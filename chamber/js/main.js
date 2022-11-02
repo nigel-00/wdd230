@@ -64,18 +64,12 @@ if (dayNumber ==  1 || dayNumber == 2) {
 
 
 // local storage manipulation
+//ger the visit id
+const totalDays = document.getElementById('visit');
+//get the number of visits
+let numDays = Number(window.localStorage.getItem("startDays"));
+let currDate = new Date();
 
+if (numDays !== 0){
 
-const visit = document.querySelector("#visit");
-
-let lastVisit = window.localStorage.getItem("lastVisitTime");
-
-if (lastVisit == null) {
-    visit.textContent = "This is your first visit!";
-} else {
-    visit.textContent = `${Math.round((Date.now() - lastVisit) / 86400000)} days`;
 }
-
-let visitTime = Date.now();
-
-localStorage.setItem("lastVisitTime", visitTime);

@@ -74,17 +74,17 @@ header img{
 }
 
 /* style the social media  */
-.social-media{
+.social-media a {
     color:#002E5D; 
     font-size: 1.5rem; 
     text-align: center;
     padding-bottom: 1rem;
 }
-.social-media i{
+.social-media a i{
     padding: .2rem;
 }
 /* social media hoover color */
-.social-media i:hover{
+.social-media a i:hover{
     color: #D9D8D5;
 }
 
@@ -370,20 +370,21 @@ div.hideme {display:none;}
 .main-card{
     background-color: #002E5D;
     color:#DCD1D1;
-    margin: 1.5rem 0;
+    margin-bottom: 1rem;
+   
 }
 
 .main-card picture{
     width: 100%;
-    height: 50vh;
+    height: auto;
 }
 .main-card picture img{
     width: 100%;
-    height: 50vh;
+    height: auto;
 }
 
 .hover:hover {box-shadow: 0 0 50px #800020;}
 
 .main-card .content{
-    padding: .2rem; 
+    padding: 1.5rem; 
 }

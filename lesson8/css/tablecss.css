@@ -2,18 +2,20 @@
     font-family: arial, sans-serif;
     margin: 20vh auto;
     width: 50%;
+    border-collapse: collapse;
+    border: 1px solid #dddddd;
    
   }
 
-  caption {
+  th {
     font-weight: bold;
     background-color: #800020;
     color: #dddddd;
   }
-  th{
+  .top{
     background-color: #c76f85;
   }
-  tr,td, th, caption  {
+  tr,td, th {
     border: 1px solid #dddddd;
     text-align: center;
     padding: 8px;

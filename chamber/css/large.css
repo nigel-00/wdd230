@@ -107,10 +107,10 @@
 
     /* style the discover page */
 
-.card-div{
-    display: flex;
+    .main-card .content{
+        margin:auto; 
+    }  
 
-}
 
 
     }
