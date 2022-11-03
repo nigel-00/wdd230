@@ -12,6 +12,7 @@ body {
     margin: auto;
     width: 100%;
     background-color:#800020;
+    color:#DCD1D1;
         
 }
 /* styling the header */
@@ -74,11 +75,16 @@ header img{
 }
 
 /* style the social media  */
+.social-media{
+    margin: auto;
+}
 .social-media a {
     color:#002E5D; 
     font-size: 1.5rem; 
     text-align: center;
     padding-bottom: 1rem;
+    
+
 }
 .social-media a i{
     padding: .2rem;
@@ -197,10 +203,6 @@ nav div i{
 
 .map-link{
     color: #D9D8D5;
-}
-
-main picture img{
-    width: 100%;
 }
 
 /* position event box on hero section  */
@@ -387,4 +389,104 @@ div.hideme {display:none;}
 
 .main-card .content{
     padding: 1.5rem; 
+}
+
+/* style the thank you  page */
+.thanks{
+    width:60%;
+    height: 50vh;
+    background-color: #002E5D;
+    margin: 2rem auto;
+}
+.thanks p {
+    color:#D9D8D5;
+    text-align: center;
+}
+
+
+/* style the join page  */
+.form-main div{
+    background-color: #002E5D;
+    padding: 3rem;
+    border-radius: 8px ;
+    display: grid;
+    max-width: 95%;
+    margin: auto;
+  }
+
+  .form-main .join-main{
+    text-align: center;
+  }
+form fieldset {
+    margin: 2rem 0;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    margin: 0 1rem;
+    padding: 0 .5rem;   
+    max-width: 80%;
+}
+form label input {
+    color:#DCD1D1;
+}
+
+form label.pes , form label.bus{
+    display: block;
+    padding-top: 1rem;
+    font-size: .8rem;
+    text-align: left;
+}
+
+form label.pes input, form label.pes select{
+    --webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem ;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form label.bus{
+    display: block;
+    padding: .75rem;
+}
+
+
+form input.submitBtn{
+    border: none;
+    background-color: #800020;
+    border-radius: 10px;
+    padding: .75rem 1.5rem;
+    margin:  30px 50px;
+    width: 75%;
+    color:#DCD1D1;
+}
+form input.submitBtn:hover{
+    background-color: #9f4f40;
+}
+
+#description{
+    display: block;
+    border-radius: 6px;
+    margin-top: .7rem;
+    background-color: rgb(231, 224, 224);
+    padding: .7rem;
+}
+
+#date{
+    text-align: center;
+    margin: 3rem;
+}
+form label.pes input:required{
+    border-left: red solid 6px;
+
+}
+
+form label.pes input:required:valid{
+    border-left: green solid 6px;
 }
