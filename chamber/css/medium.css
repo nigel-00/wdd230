@@ -91,6 +91,13 @@
         right: 10px;
     }
 
+    .hero-action div picture{
+        height: 500px;
+    }
+     .hero-action picture img{
+        height: 500px ;
+        
+    }
     
     footer .logo-image{
         float: left;
