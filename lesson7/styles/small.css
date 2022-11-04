@@ -7,3 +7,6 @@ main {
     background-color: #002E5D;
     color: #fff;
 }
+main picture img[data-src]{
+height: 400px;
+}
