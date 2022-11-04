@@ -405,6 +405,12 @@ div.hideme {display:none;}
 
 
 /* style the join page  */
+hr{
+    
+    border: 2px solid #002E5D;
+    
+    
+}
 .form-main div{
     background-color: #002E5D;
     padding: 3rem;
@@ -414,8 +420,9 @@ div.hideme {display:none;}
     margin: auto;
   }
 
-  .form-main .join-main{
+.form-main .join-main{
     text-align: center;
+
   }
 form fieldset {
     margin: 2rem 0;
@@ -479,14 +486,13 @@ form input.submitBtn:hover{
 }
 
 #date{
-    text-align: center;
-    margin: 3rem;
+    display: none;
 }
 form label.pes input:required{
-    border-left: red solid 6px;
+    border-left: red solid 10px;
 
 }
 
 form label.pes input:required:valid{
-    border-left: green solid 6px;
+    border-left: green solid 10px;
 }
