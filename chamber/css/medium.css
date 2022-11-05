@@ -96,6 +96,7 @@
     }
      .hero-action picture img{
         height: 500px ;
+        object-fit: fill;
         
     }
     

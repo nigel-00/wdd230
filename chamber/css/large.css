@@ -53,10 +53,11 @@
 
      .hero-action div picture{
         height: 800px;
+        object-fit: fill;
     }
      .hero-action picture img{
         height: 800px ;
-        
+        object-fit: fill;
     }
     
      .news {    
