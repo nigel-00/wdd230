@@ -1,0 +1,87 @@
+{
+    "companies": [
+
+        {
+            "name": "The African Touch",
+            "address": "452 Miles Rd, Victoria Falls, Zimbabwe",
+            "phonenumber": "+263 1340239",
+            "website": "https://www.theafricantouch.co.za/",
+            "image": "./images/african-touch-logo.png"
+
+        },
+
+        {
+            "name": "Africa Albida Tourism",
+            "address": "471 Stand, Victoria Falls, Zimbabwe",
+            "phonenumber": "+263 2132843211",
+            "website": "https://africaalbidatourism.com/",
+            "image": "./images/africa-logde-logo.png"
+
+        },
+
+        {
+            "name": "Adventure Zone",
+            "address": "954 Spencer Rd, Victoria Falls, Zimbabwe",
+            "phonenumber": "+263 712205306",
+            "website": "https://www.adventurezonevicfalls.com/",
+            "image": "./images/adventure-falls-logo.png"
+
+        },
+        {
+            "name": "Chobe Safari Lodge",
+            "address": "545 Reynard Rd, Victoria Falls, Zimbabwe",
+            "phonenumber": "+263 2132841841",
+            "website": "https://www.chobe-safari-lodge.net/",
+            "image": "./images/chobe-logo.png"
+
+        },
+
+        {
+            "name": "Cultural Vibes Travel & Tours",
+            "address": "Elephant's Walk Complex 273 Adam Stander Rd, Victoria Falls",
+            "phonenumber": "+263 772984586",
+            "website": "https://www.cultural-vibes.com/",
+            "image": "./images/cultural-vibes-logo.png"
+
+        },
+
+        {
+            "name": "Mosi-Ua-Tunya Lodge",
+            "address": "609 Mahogany Rd, Victoria Falls, Zimbabwe",
+            "phonenumber": "+263 1344336",
+            "website": "https://mosi-ua-tunya.com/",
+            "image": "./images/mosi-logo.png"
+
+        },
+
+        {
+            "name": "Victoria Falls Safari Lodge",
+            "address": "471 Squire Cummings Rd, Victoria Falls, Zimbabwe",
+            "phonenumber": "+263 1343211",
+            "website": "https://victoria-falls-safari-lodge.com/",
+            "image": "./images/vic-falls-lodge-logo.png"
+
+        },
+
+        {
+            "name": "Nakavango Conservation",
+            "address": "Stanley and Livingstone Reserve, Victoria Falls, Zimbabwe",
+            "phonenumber": "+ 263 1343234",
+            "website": "https://www.nakavango.com/",
+            "image": "./images/nakavango-logo.png"
+
+        },
+
+        {
+            "name": "Discover Victoria Falls",
+            "address": "2344 Livingstone Rd, Victoria Falls, Zimbabwe",
+            "phonenumber": "+ 263 13 45821",
+            "website": "https://discovervictoriafalls.com/",
+            "image": "./images/discover-safari-logo.png"
+
+        }
+
+
+
+    ]
+}
