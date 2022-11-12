@@ -99,6 +99,20 @@
         object-fit: fill;
         
     }
+
+    .spotlight-first picture{
+        margin-left: 2.0rem;
+        width: 80%;
+        height: auto;
+    }
+
+    .spotlight-sec picture{
+        margin-left: .1rem;
+        width: 80%;
+        height: auto;
+    }
+  
+     
     
     footer .logo-image{
         float: left;

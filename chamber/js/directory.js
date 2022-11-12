@@ -3,11 +3,14 @@ import myCompanies from './data.json' assert {type: 'json'};
 
 console.log(myCompanies);
 
-const cards = document.querySelector('.cards');
+const cards = document.querySelector('#gridbtn');
+const list = document.querySelector('#listbtn');
+const show = document.querySelector('article');
+
 
 function display(comp) {  
-    const prophets = comp['companies'];
-    prophets.forEach(displayCompanies);
+    const companies = comp['companies'];
+    companies.forEach(displayCompanies);
   }
 
   display(myCompanies);
@@ -50,5 +53,20 @@ function display(comp) {
     
   
     // Add/append the existing HTML div with the cards class with the section(card)
-    document.querySelector('div.cards').appendChild(card);
+    show.appendChild(card);
   }
+
+  function showcards(){
+    show.classList.add("cards");
+    show.classList.remove("list");
+  };
+  
+  cards.addEventListener("click", showcards);
+  
+  function showList() {
+    show.classList.add("list");
+    show.classList.remove("cards");
+  }
+  
+  list.addEventListener("click", showList); 
+  //add an event listener with a button for list 
