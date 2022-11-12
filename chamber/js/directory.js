@@ -5,8 +5,7 @@ console.log(myCompanies);
 
 const cards = document.querySelector('.cards');
 
-function display(comp) {
-    console.table(comp);  
+function display(comp) {  
     const prophets = comp['companies'];
     prophets.forEach(displayCompanies);
   }
@@ -18,16 +17,23 @@ function display(comp) {
     let card = document.createElement('section');
     let h2 = document.createElement('h2');
     let p1   = document.createElement('p');
+    let anchor = document.createElement('a');
     let p2 = document.createElement('p');
-    let p3 = document.createElement('p');
     let portrait = document.createElement('img');
+
+          
   
     // Change the textContent property of the h2 element to contain the prophet's full name
     h2.textContent = ` ${company.name }`;
     p1.textContent = `${company.address} `;
-    p2.textContent = `${company.website}`;
-    p3.textContent = `${company.phonenumber}`;
-   
+    p2.textContent = `${company.phonenumber}`;
+
+
+    let textNode = document.createTextNode(company.name);
+    anchor.appendChild(textNode);
+    anchor.href = company.website;
+    anchor.classList = 'comp_link';
+
   
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill ble).
     portrait.setAttribute('src', company.image);
@@ -39,8 +45,8 @@ function display(comp) {
     card.appendChild(portrait);
     card.appendChild(h2);
     card.appendChild(p1);
+    card.appendChild(anchor);
     card.appendChild(p2);
-    card.appendChild(p3);
     
   
     // Add/append the existing HTML div with the cards class with the section(card)

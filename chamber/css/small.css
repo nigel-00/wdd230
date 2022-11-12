@@ -481,7 +481,9 @@ form label.pes input:required:valid{
 }
 
 
-/* style the discover page */
+/* style the directory page */
+
+
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -500,10 +502,15 @@ form label.pes input:required:valid{
     margin: 0;
   }
 
-  .comp_img img {
+.cards img { 
     max-width: 350px;
     height: auto;
-    border: 1px solid #333;
-    margin-bottom: .5rem;
-  }
   
+  }
+
+  .comp_link{
+    color:#777;
+  }
+  .comp_link:hover{
+    color: #800020;
+  } 
