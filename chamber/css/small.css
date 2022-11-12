@@ -489,7 +489,10 @@ form label.pes input:required:valid{
 
 
 /* style the directory page */
-.menu{ margin: 1rem;}
+.menu{ 
+    margin: 1rem;
+    text-align: center;    
+}
 article h2{
     font-size: 16px;
  
