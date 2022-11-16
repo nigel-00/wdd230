@@ -86,12 +86,16 @@
     </div>
 
     <div class="weather">
-      <h2>weather</h2>
-      <p><i class="fa fa-cloud"></i><span id="temp">34</span>&deg;</p>
-      <hr>
-      <p class="weather status" >Partly Cloudy</p>
-      <p>Wind Speed: <span id="speed">60</span>mph</p>
+      <h2><span id="place">city</span></h2>
+      <span><span id="temp"></span>&deg;</span>
+      <figure>
+        <img id="weather_icon" src="images/placeholder.png" alt="current weather">
+        <figcaption></figcaption>
+      </figure>
+      <div class="para-desc">
+      <p>Wind Speed: <span id="speed">00</span>mph</p>
       <p>Wind Chill: <span id="chill">N/A</span></p>
+    </div>
     
     </div>
 
@@ -170,5 +174,6 @@
 <script src="js/main.js"></script>
 <script src="js/windchill.js"></script>
 <script src="js/days.js"></script>
+<script src="js/weather.js"></script>
 </body>
 </html>

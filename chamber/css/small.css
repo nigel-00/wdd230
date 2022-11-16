@@ -247,7 +247,7 @@ nav div i{
 }
 .join-chamber{
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #800020;
@@ -259,17 +259,20 @@ nav div i{
 
 
 .join{
+    
     background: #002E5D;
     color:#D9D8D5;
 }
 
 .join-us-btn{
+   
     background-color: #800020;
     padding: 1rem 3.5rem;
     border: 5px solid #002E5D;
     border-radius: 10px;
     color: #DCD1D1;
-    margin:1rem;
+    margin-left: 150px;
+ 
     
 }
 .join-us-btn:hover{
@@ -279,19 +282,34 @@ nav div i{
 .weather{
     background-color: #002E5D;
     color: #DCD1D1;
-   
+    text-align: center;
 }
 
-.weather hr{
-   width: 80%;
-}
-
-.weather h1{
+.weather h2{
     padding-top: 1rem;
+    font-size: 25px;
+}
+.weather figure{
+    display: flex;
+    align-items: center;
+
+}
+.weather figure figcaption{
+    font-size: 22px;
+    text-align: center ;
+
+}
+.weather figure img{
+    width: 30%;
+    height:auto;
+    margin-left: 3.5rem;
 }
 
-.weather p{
-    padding: .5rem;
+.weather span #temp{
+   font-size: 20px;
+}
+.weather .para-desc{
+    margin: 0;
 }
 
 /* style the news */
@@ -302,6 +320,7 @@ nav div i{
 }
 .news h2{
     text-align: center;
+    padding-top: 1rem;
 }
 
 /* style the spotlight first div */ 
@@ -523,6 +542,8 @@ article h2{
 article.cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+   
   }
   
   article.cards section {
@@ -532,10 +553,14 @@ article.cards {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+
   }
   
   .cards p{
     margin: 0;
+    padding: 0.2rem;
+    font-size:smaller;
   }
 
 .cards img { 
