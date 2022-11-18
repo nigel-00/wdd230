@@ -282,33 +282,36 @@ nav div i{
     background-color: #002E5D;
     color: #DCD1D1;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+
 }
 
-.weather h2{
-    padding-top: 1rem;
-    font-size: 25px;
+.city-temp{
+    text-align: center;
+    background-color: #800020;
+    border: 3px solid #002E5D;
+   
 }
-.weather figure{
+#temp-full{
+    font-size: 80px;
+}
+#place{
+    text-transform: uppercase;
+}
+.icon-info{
+    padding-bottom: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    
-
-}
-.weather figure figcaption{
-    font-size: 22px;
-  
-}
-.weather figure img{
-    width: 150px;
-    height:auto;
 }
 
-.weather span #temp{
-   font-size: 20px;
+.icon-info figure img{
+    width: 96%;
+    height: auto;
 }
-.weather .para-desc{
-    margin: 0;
+.para-desc p{
+    padding: 0;
 }
 
 /* style the news */
@@ -520,6 +523,7 @@ article h2{
     background-color: #777;
     padding: .5rem 2rem;
     border-radius: 5px;
+    color:#000;
 }
 #gridbtn:hover{
     background-color: #002E5D;
@@ -579,10 +583,10 @@ article.cards {
 	display: flex;
 	flex-direction: column;
     background-color: #002E5D;
-    width: 95%;
+    width: 100%;
     margin: 10px;
     margin: auto;
-   
+    
 }
 
 .list section {
@@ -592,7 +596,6 @@ article.cards {
 	justify-content: left;
     margin: 0 10px;
     padding-left: 2rem;
-    
 }
 
 .list section:first-child {
@@ -607,5 +610,5 @@ article.cards {
    }
 
 .list section img {
-	display: none; /* smaller viewports only */
+	display: none;
 }

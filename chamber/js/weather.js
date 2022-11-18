@@ -9,7 +9,7 @@ fetch(apiURL)
     console.log(weatherInfo);
     
   document.getElementById('place').innerHTML = weatherInfo.name;  
-  document.getElementById('temp').innerHTML = weatherInfo.main.temp; 
+  document.getElementById('temp').innerHTML = Math.round(weatherInfo.main.temp); 
   document.getElementById('speed').innerHTML = weatherInfo.wind.speed; 
   const captionDesc = document.querySelector('figcaption');
 
