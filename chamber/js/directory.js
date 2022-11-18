@@ -1,19 +1,23 @@
 
-import myCompanies from './data.json' assert {type: 'json'};
+const requestURL = './js/data.json';
 
-console.log(myCompanies);
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    console.table(jsonObject);  
+    const companies = jsonObject['companies'];
+    companies.forEach(displayCompanies);
+  });
+
+
 
 const cards = document.querySelector('#gridbtn');
 const list = document.querySelector('#listbtn');
 const show = document.querySelector('article');
 
 
-function display(comp) {  
-    const companies = comp['companies'];
-    companies.forEach(displayCompanies);
-  }
-
-  display(myCompanies);
 
   function displayCompanies(company) {
     // Create elements to add to the document

@@ -6,7 +6,7 @@
             "address": "452 Miles Rd, Victoria Falls, Zimbabwe",
             "phonenumber": "+263 1340239",
             "website": "https://www.theafricantouch.co.za/",
-            "image": "./images/african-touch-logo.png"
+            "image": "https://www.theafricantouch.co.za/wp-content/uploads/2021/08/logo.png"
 
         },
 
@@ -15,7 +15,7 @@
             "address": "471 Stand, Victoria Falls, Zimbabwe",
             "phonenumber": "+263 2132843211",
             "website": "https://africaalbidatourism.com/",
-            "image": "./images/africa-logde-logo.png"
+            "image": "https://africaalbidatourism.com/wp-content/uploads/2018/02/Logo_navbar.png"
 
         },
 
@@ -24,15 +24,15 @@
             "address": "954 Spencer Rd, Victoria Falls, Zimbabwe",
             "phonenumber": "+263 712205306",
             "website": "https://www.adventurezonevicfalls.com/",
-            "image": "./images/adventure-falls-logo.png"
+            "image": "https://www.adventurezonevicfalls.com/templates/yootheme/cache/logo_az-3d7a808b.png"
 
         },
         {
             "name": "Chobe Safari Lodge",
             "address": "545 Reynard Rd, Victoria Falls, Zimbabwe",
             "phonenumber": "+263 2132841841",
-            "website": "https://www.chobe-safari-lodge.net/",
-            "image": "./images/chobe-logo.png"
+            "website": "https://www.chobe.com/chobe-safari-lodge.php",
+            "image": "https://www.chobe.com/assets/img/chobe-logo.png"
 
         },
 
@@ -41,7 +41,7 @@
             "address": "Elephant's Walk Complex 273 Adam Stander Rd, Victoria Falls",
             "phonenumber": "+263 772984586",
             "website": "https://www.cultural-vibes.com/",
-            "image": "./images/cultural-vibes-logo.png"
+            "image": "https://www.cultural-vibes.com/wp-content/uploads/2019/12/cultural-vibes-logo2.png"
 
         },
 
@@ -50,7 +50,7 @@
             "address": "609 Mahogany Rd, Victoria Falls, Zimbabwe",
             "phonenumber": "+263 1344336",
             "website": "https://mosi-ua-tunya.com/",
-            "image": "./images/mosi-logo.png"
+            "image": "http://mosi-ua-tunya.com/wp-content/uploads/2020/04/mosi-logo.png"
 
         },
 
@@ -59,7 +59,7 @@
             "address": "471 Squire Cummings Rd, Victoria Falls, Zimbabwe",
             "phonenumber": "+263 1343211",
             "website": "https://victoria-falls-safari-lodge.com/",
-            "image": "./images/vic-falls-lodge-logo.png"
+            "image": "https://victoria-falls-safari-lodge.com/wp-content/uploads/2020/03/Victoria-Falls-Safari-Lodge-Big-Logo.png"
 
         },
 
@@ -68,7 +68,7 @@
             "address": "Stanley and Livingstone Reserve, Victoria Falls, Zimbabwe",
             "phonenumber": "+ 263 1343234",
             "website": "https://www.nakavango.com/",
-            "image": "./images/nakavango-logo.png"
+            "image": "https://www.nakavango.com/wp-content/themes/nakavango/images/nakavango-logo.png"
 
         },
 
@@ -77,7 +77,7 @@
             "address": "2344 Livingstone Rd, Victoria Falls, Zimbabwe",
             "phonenumber": "+ 263 13 45821",
             "website": "https://discovervictoriafalls.com/",
-            "image": "./images/discover-safari-logo.png"
+            "image": "https://discovervictoriafalls.com/wp-content/themes/discover-safari/images/logo.png"
 
         }
 
