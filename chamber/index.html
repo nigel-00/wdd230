@@ -69,8 +69,8 @@
             <img src="images/vic-safari.jpg" alt="safari in the falls">
         </picture>
         
-        
-        <button class="join-chamber">Join Chamber</button>
+        <button type="button" onclick='window.location.href="join.html"' class="join-chamber">Join Chamber</button>
+      
         <div id="event-inv">
           Come join us for the chamber meet and greet Wednesday at 7:00 p.m
         </div>
@@ -86,25 +86,21 @@
     </div>
 
     <div class="weather">
-      <div class="city-temp">
-      <span id="temp-full"><span id="temp"></span>&deg;</span>
       <h2><span id="place">city</span></h2>
-    </div>
-
-    <div class="icon-info">
+      <div id="icon-temp">
       <figure>
         <img id="weather_icon" src="images/placeholder.png" alt="current weather">
-
         <figcaption></figcaption>
       </figure>
-      <div class="para-desc">
-      <p>Speed: <span id="speed">00</span>mph</p>
-      <p>Wind Chill: <span id="chill">N/A</span></p>
+      <span id="full-temp"><span id="temp"></span>&deg;</span>
     </div>
-  </div>
+      <p class="first-p">Speed: <span id="speed">00</span>mph</p>
+      <p class="last-p">Wind Chill: <span id="chill">N/A</span></p>
+   
+    </div>
     
-    </div>
 
+  
   <div class="spotlight-first">
     <picture class="makert">
       <img src="images/africa-logde-logo.png" alt="farmers makert image ">
@@ -140,7 +136,7 @@
 
   <div class="join">
     <div class="join-us-btn">
-    <button>Join </button>
+    <button type="button" onclick='window.location.href="join.html"' >Join </button>
   </div>
     <p>Join us today! The chamber initiates numerous monthly 
       business-to-business opportunities 

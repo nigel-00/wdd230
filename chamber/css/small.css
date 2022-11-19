@@ -180,9 +180,10 @@ main{
 }
 
 .main-divs div{
+    display: block;
     width: 100%;
     height:auto;
-    margin: 0;
+    margin:0 ;
     padding:0;
 }
 main p{
@@ -259,7 +260,6 @@ nav div i{
 
 
 .join{
-    
     background: #002E5D;
     color:#D9D8D5;
     text-align: center;
@@ -282,37 +282,35 @@ nav div i{
     background-color: #002E5D;
     color: #DCD1D1;
     text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
-
+    padding: 1rem;
 }
 
-.city-temp{
-    text-align: center;
-    background-color: #800020;
-    border: 3px solid #002E5D;
-   
+#icon-temp figure img{
+   width: 30%;
+   height: auto;
 }
-#temp-full{
-    font-size: 80px;
-}
-#place{
-    text-transform: uppercase;
-}
-.icon-info{
-    padding-bottom: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-}
-
-.icon-info figure img{
-    width: 96%;
+#icon-temp figure{
+    width: 80%;
     height: auto;
+ }
+
+#full-temp{
+    font-size: 50px;
 }
-.para-desc p{
-    padding: 0;
+.weather h2{
+    text-transform: uppercase;
+    padding-top: 1rem;
 }
+.weather .first-p{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.weather .last-p{
+    padding-top: 0;
+    padding-bottom: 1rem;
+}
+
+
 
 /* style the news */
 .news{
