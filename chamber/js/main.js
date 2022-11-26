@@ -30,7 +30,7 @@ function toggleMenu(){
 }
 
 const x = document.getElementById('hamburgerBtn');
-x.onclick = toggleMenu;
+x.onclick = toggleMenu; 
 
 // create a message pop up 
 //get a date 

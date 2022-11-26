@@ -61,26 +61,37 @@
 <h1 class="join-main">Join the Chamber</h1>
 <!-- create a join form  -->
 <div>
-<form method = "get" action="thankyou.html" class="">
+<form method = "get" action="thankyou.html">
     <fieldset>
         <legend> Personal Information</legend>
-       <label class="pes"> First Name*<input type="text" name="fname" required></label>
+       <label class="pes">First Name* <input type="text" name="fname" required></label>
        <label class="pes"> Last Name*<input type="text" name="lname" required></label>
        <label class="pes"> Title<input type="text" name="title" pattern="[a-zA-Z0-9.-_]{7,25}"></label>
         <label class="pes"> Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
-        <label class="pes"> Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
-        <label class="pes">Business Title*<input type="text" name="business title"  required></label>
+        <label class="pes">Business Website<input type="url" name="website" placeholder="www.yourbusiness.com" ></label>
+        <label class="pes"> Phone<input type="tel" name="phone" placeholder="1235551234"></label>
+        <label class="pes">Business Name*<input type="text" name="business title"  required></label>
+        <label class="pes">Business Address<input type="text" name="business address"></label>
     </fieldset>  
 
     <fieldset>
         <legend> Business Information</legend>
         
+        <table>
+            <tr>
+            <td><label class="bus"><input type="radio" name="new-members" value="np"><span> NP Membership:</span></td> <td> For non profit organizations and free access.</td></label>
+        </tr>
+        <tr>
+            <td><label class="bus" ><input type="radio" name="new-members" value="bronze"><span> Bronze Membership:</span></td> <td> Membership fee is $750 (Access to newsletters, 10 business connections weekly).</td></label>
+        </tr>
+        <tr>
+           <td> <label class="bus"><input type="radio" name="new-members" value="silver"><span>Silver Membership:</span></td> <td> Membership fee is $1,500 (Unlimited business connections and investors).</td></label>
+        </tr>
+        <tr>
+            <td><label class="bus"><input type="radio" name="new-members" value="gold"><span>Gold Membership:</span></td> <td> Membership fee is $2,200 (Access to leadership and business training).</td></label>
+        </tr>
 
-        <label class="bus"><input type="radio" name="new-members" value="np">NP Membership</label>
-        <label class="bus" ><input type="radio" name="new-members" value="bronze">Bronze Membership</label>
-        <label class="bus"><input type="radio" name="new-members" value="silver">Silver Membership</label>
-        <label class="bus"><input type="radio" name="new-members" value="gold">Gold Membership</label>
-        
+        </table>
         <label class="bus" for="description"> Business Description</label>
         <textarea id="description" name="description" rows="15" cols="25">
         </textarea>
@@ -106,7 +117,7 @@
         </div>
         <div class="footer-text-address">
         <h3>Victoria Falls Chamber of Commerce</h3>
-        <p>123 Queen Falls Dr</p>
+        <p>700 Aerodrome</p>
         <p>Victoria Falls, Zimbabwe</p>
         </div>
     </div>

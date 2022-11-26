@@ -1,5 +1,6 @@
-
 const requestURL = './js/data.json';
+const cards = document.querySelector('.spotlight')
+
 
 fetch(requestURL)
   .then(function (response) {
@@ -8,16 +9,31 @@ fetch(requestURL)
   .then(function (jsonObject) {
     console.table(jsonObject);  
     const companies = jsonObject['companies'];
-    companies.forEach(displayCompanies);
+
+    const filterCompanies = companies.filter((company) => {
+        return company.membership == "Silver" || company.membership == "Gold";
+
+    })
+
+    console.log(filterCompanies);
+
+    let count = 0;
+
+
+    let rand = Math.floor(Math.random() * filterCompanies.length)
+    console.log(rand)
+    for (let i = rand; i  < companies.length; i++) {
+    
+        if(companies[i].membership === 'Gold' || companies[i].membership === 'Silver'){
+            displayCompanies(companies[i])
+            count ++
+            if(count == 3){
+                break;
+            }
+        }
+      }
+    
   });
-
-
-
-const cards = document.querySelector('#gridbtn');
-const list = document.querySelector('#listbtn');
-const show = document.querySelector('article');
-
-
 
   function displayCompanies(company) {
     // Create elements to add to the document
@@ -60,20 +76,10 @@ const show = document.querySelector('article');
     
   
     // Add/append the existing HTML div with the cards class with the section(card)
-    show.appendChild(card);
+    cards.appendChild(card);
+
+  
   }
 
-  function showcards(){
-    show.classList.add("cards");
-    show.classList.remove("list");
-  };
-  
-  cards.addEventListener("click", showcards);
-  
-  function showList() {
-    show.classList.add("list");
-    show.classList.remove("cards");
-  }
-  
-  list.addEventListener("click", showList); 
-  //add an event listener with a button for list 
+
+ 

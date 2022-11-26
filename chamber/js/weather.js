@@ -1,10 +1,12 @@
 //ADD the key and change units to imperial
-const apiURL = "//api.openweathermap.org/data/2.5/weather?id=879431&appid=a7163999040e65fca8574bedafc98106&units=imperial"
+const apiURL = "//api.openweathermap.org/data/2.5/weather?id=879431&appid=7960bee4048226cfe4a975f0eb320344&units=imperial"
 
 //Go fetch it and then wait for a response.
 fetch(apiURL)
   .then((response) => response.json())
   .then((weatherInfo) => {
+
+
     //Once it comes back, display it to the console.
     console.log(weatherInfo);
     
@@ -12,7 +14,6 @@ fetch(apiURL)
   document.getElementById('temp').innerHTML = Math.round(weatherInfo.main.temp); 
   document.getElementById('speed').innerHTML = weatherInfo.wind.speed; 
   const captionDesc = document.querySelector('figcaption');
-
 
   const iconcode = weatherInfo.weather[0].icon;
   const icon_path = "//openweathermap.org/img/w/" +iconcode + ".png";

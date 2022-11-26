@@ -36,9 +36,7 @@ header {
 	font-size: 1.5rem;
 }
 
-.logo-heading .logo-image {
-	box-shadow: 0 0 30px #777;
-}
+
 .m {
 	letter-spacing: 1pt;
 	font-weight: 700;
@@ -183,7 +181,7 @@ main{
     display: block;
     width: 100%;
     height:auto;
-    margin:0 ;
+    margin: 0 ;
     padding:0;
 }
 main p{
@@ -208,7 +206,6 @@ nav div i{
     border-radius: 50%;
     margin:auto;
     padding: 0;
-    box-shadow: 0 0 30px #777;
 }
 
 .map-link{
@@ -218,7 +215,7 @@ nav div i{
 /* position event box on hero section  */
 .hero-action{
     position: relative;
-    background-color: #002E5D;
+
 }
 
 .hero-action picture{
@@ -309,7 +306,10 @@ nav div i{
     padding-top: 0;
     padding-bottom: 1rem;
 }
-
+.weather .three-day-forecast{
+    display: flex;
+    font-size: small;
+}
 
 
 /* style the news */
@@ -323,40 +323,29 @@ nav div i{
     padding-top: 1rem;
 }
 
-/* style the spotlight first div */ 
-.spotlight-first{
+
+ .spotlight section{
     background-color: #002E5D;
-    color:#DCD1D1;
-}
+    margin-bottom: 0.3rem;
+    padding: 1.35rem;
+    text-align: center;
+    
+ }
 
-/* spotlight first image */
-.spotlight-first picture{
-    margin-left: 5rem;
-    width: 80%;
-    height: auto;
-}
-.spotlight-first img{
-    width: 80%;
-    height: auto;
+ .spotlight img { 
+    max-width: 50%;
+    height:60px ;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-}
-/* spotlight second div */
-.spotlight-sec{
-   background-color: #002E5D;
-   color:#D9D8D5;
-}
+  
+  .spotlight p{
+    margin: 0;
+    padding: 0.5rem;
+    font-size:smaller;
+  }
 
-.spotlight-sec picture{
-    margin-left: 3rem;
-    width: 80%;
-    height: auto;
-}
-
-.spotlight-sec picture img{
-    width: 80%;
-    height: auto; 
-}
- 
 
 /* style the event message */
 div#event{
@@ -377,6 +366,7 @@ div.hideme {display:none;}
 .event{
     background-color: #002E5D;
     color:#D9D8D5;
+    text-align: center;
 }
 
 /* style the discover page */
@@ -408,11 +398,12 @@ div.hideme {display:none;}
     width:60%;
     height: 50vh;
     background-color: #002E5D;
-    margin: 2rem auto;
+    margin: auto;
 }
 .thanks p {
     color:#D9D8D5;
     text-align: center;
+    padding-top: 5rem;
 }
 
 
@@ -425,7 +416,7 @@ hr{
     padding: 3rem;
     border-radius: 8px ;
     display: grid;
-    max-width: 100%;
+    max-width: 90%;
     margin: auto;
   }
 
@@ -479,7 +470,7 @@ form input.submitBtn{
     border-radius: 10px;
     padding: .75rem 1.5rem;
     margin:  30px 50px;
-    width: 75%;
+    width: 30%;
     color:#DCD1D1;
 }
 form input.submitBtn:hover{
@@ -492,6 +483,7 @@ form input.submitBtn:hover{
     margin-top: .7rem;
     background-color: rgb(231, 224, 224);
     padding: .7rem;
+    width: 60%;
 }
 
 #date{
@@ -504,6 +496,25 @@ form label.pes input:required{
 
 form label.pes input:required:valid{
     border-left: green solid 10px;
+}
+
+
+fieldset tr td:first-child{
+    padding-right: 20px;
+    padding-top: 1rem;
+}
+
+fieldset tr td:first-child span{
+    padding: 7px;
+
+}
+
+fieldset tr td:last-child{
+    text-align: left;
+    padding-top: 1rem;
+    color:#9f4f40;
+    font-weight: 800;
+    font-size: 15px;
 }
 
 
@@ -543,23 +554,22 @@ article h2{
 article.cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-
-   
   }
   
   article.cards section {
     margin: 0.3rem;
-    padding: .8rem;
+    padding: 1.5rem;
     background-color: #002E5D;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 10px;;
 
   }
   
   .cards p{
     margin: 0;
-    padding: 0.2rem;
+    padding: 0.5rem;
     font-size:smaller;
   }
 
@@ -581,9 +591,10 @@ article.cards {
 	display: flex;
 	flex-direction: column;
     background-color: #002E5D;
-    width: 100%;
+    width: 90%;
     margin: 10px;
     margin: auto;
+    border-radius: 10px;
     
 }
 
@@ -594,6 +605,7 @@ article.cards {
 	justify-content: left;
     margin: 0 10px;
     padding-left: 2rem;
+    border-radius: 10px;
 }
 
 .list section:first-child {
@@ -609,4 +621,101 @@ article.cards {
 
 .list section img {
 	display: none;
+}
+
+/* style the contact page */
+#container-card{
+    width: 80%;
+    margin: 20px auto;
+}
+#contact-us-box{
+    display: block;
+    background-color: #fff;
+}
+#contact-us-left{
+    padding: 40px;
+    text-align: left;
+    color:#800020;
+
+}
+#contact-us-right{
+    padding: 40px;
+    background: #002E5D;
+    color: #D9D8D5;
+}
+#container-card h1{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#input-row{
+    display: grid;
+    margin-bottom: 20px;
+}
+.input-group{
+   padding-top: 1rem;
+}
+.input-group input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    padding-top: 10px;
+    padding-bottom: 5px;;
+}
+#contact-us-left textarea{
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#contact-us-left label{
+    margin-bottom: 6px;
+    display: block;
+}
+#contact-us-left button{
+    background: #002E5D;
+    width: 100px;
+    border: none;
+    outline: none;
+    color:#D9D8D5;
+    border-radius: 10px;
+    height: 35px;
+    margin-top: 30px;
+}
+#contact-us-left h3{
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+#contact-us-right h3{
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+#contact-us-right tr td:first-child{
+    padding-right: 20px;
+    padding-top: 1rem;
+}
+#contact-us-right tr td:last-child{
+    text-align: left;
+    padding-top: 1rem;
+}
+
+#contact-us-right .social-media-contact a{
+    color:#800020; 
+    font-size: 1.5rem; 
+    text-align: center;
+    padding-bottom: 1rem;
+}
+#contact-us-right .social-media-contact a i{
+    padding: .2rem;
+}
+#contact-us-right td{
+    padding-bottom: 2rem;
+}
+iframe{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
