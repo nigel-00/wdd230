@@ -499,23 +499,6 @@ form label.pes input:required:valid{
 }
 
 
-fieldset tr td:first-child{
-    padding-right: 20px;
-    padding-top: 1rem;
-}
-
-fieldset tr td:first-child span{
-    padding: 7px;
-
-}
-
-fieldset tr td:last-child{
-    text-align: left;
-    padding-top: 1rem;
-    color:#9f4f40;
-    font-weight: 800;
-    font-size: 15px;
-}
 
 
 /* style the directory page */
