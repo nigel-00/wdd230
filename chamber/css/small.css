@@ -70,11 +70,6 @@ header img{
     font-size: small;
 
 }
-/* Apply the hover color to the date */
-#currDate:hover{
-    background-color: #DCD1D1;
-    color: #000;
-}
 
 /* style the social media  */
 .social-media{
