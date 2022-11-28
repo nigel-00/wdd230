@@ -507,26 +507,24 @@ article h2{
  
 }
 
+
 #gridbtn{
-    background-color: #777;
-    padding: .5rem 2rem;
-    border-radius: 5px;
-    color:#000;
-}
-#gridbtn:hover{
     background-color: #002E5D;
     color:#DCD1D1;
+    padding: .5rem 2rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
 }
+
 
 #listbtn{
-    background-color: #777;
-    padding: .5rem 2rem;
-    border-radius: 5px;
-}
-
-#listbtn:hover{
     background-color: #002E5D;
     color:#DCD1D1;
+    padding: .5rem 2rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
 }
 
 
