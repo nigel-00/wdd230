@@ -99,7 +99,7 @@
     }
 
     
-    footer .logo-image{
+    footer img{ 
         float: left;
         margin: .2rem 2vw;
     }

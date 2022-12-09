@@ -1,0 +1,41 @@
+@media only screen and (min-width: 50rem){
+
+    /* style the image */
+    .nav-header img{
+        width: 80px;
+        padding-top: 2.5rem;
+    }
+    /* stop displaying the nav button/ toggle */
+    .nav-toggle {
+        display: none;
+      }
+    /* display the nav bar vertically as a block */
+      .nav-header {
+        display: block;
+      }
+    /* display the flex as a row */
+      .flex-nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: left;
+        padding: 0 40px;
+        
+      }
+    /* style the nav links  */
+      .nav-links {
+        height: auto;
+      }
+    /* style the ul */
+      ul {
+        text-align: center;
+      }
+    /* display the links as a block */
+      .nav-link {
+        display: inline-block;
+        border-bottom: none;
+      }
+    
+    
+
+
+}/* END OF MEDIA QUERY */
