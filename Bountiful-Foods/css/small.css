@@ -148,56 +148,46 @@ ul li a:hover{ border-bottom: 2px solid #2f3226;}
 .btn:hover {
   letter-spacing: 2px;
   color: #fff;
-  background: #751f1c;
+  background-color: #751f1c;
 }
 
 /* STYLE THE FRUIT CARDS */
-.cards{
-  margin: 1rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-}
-.cards h1{
-  margin: 1rem;
-}
 
-div.card{
-  width: 250px;
-  height: 55vh;
-  background-color: #ffd7b5;
-  margin: 1rem;
-  border-radius: 10px;
-}
-
-div.card picture{
+.fruit-container{
   width: 100%;
-  height: 150px;
-  border-radius: 10px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #efefef;
+  line-height: 1.5;
 }
+.fruit-row{
+ display: flex;
+ flex-wrap:wrap;
+ align-items: center;
+ justify-content: space-between;
+}
+.card{
+ display: flex;
+ flex:1 1 20rem;
+ margin: 10px 20px;
+ background: fff;
+ padding: 10ox 20px;
+ box-shadow: 0 0 15px rgba(0,0,0,0.4);
+ flex-direction: column;
+ align-items: center;
+ align-self:normal;
+}
+.card h4{
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+.card p{margin-bottom: 10px;}
+.card img{max-width: 200px;}
 
-div.card picture img{
-  width: 100%;
-  height: 250px;
-  background-color: #fb8c0d;
-}
-
-div.card .content{
-  text-align: left;
-  padding: 10px;
-  color: #31525B;
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-div.canberry picture img{
-  background: #b80e15;
-}
-
-div.canberry{
-  background-color:#d46b6c;
-}
 
 
 
