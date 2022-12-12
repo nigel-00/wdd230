@@ -29,34 +29,115 @@
     <body>
         <!-- HEADER HERE -->  
         <header>
-            <div class="navbar">
-                <div class="container flex-nav">
-                    <div class="nav-header">
-                        <img src="pictures/logo-picture.png" alt="logo-image">
-                        <button class="nav-toggle" id="navToggle">
-                            <i class="fas fa-bars"></i>
-                        </button>
+            <nav>
+                <div class="nav-items">
+                  <div class="nav-header">
+                    <picture>
+                        <img src="pictures/logo-image.png" alt="logo">
+                    </picture>
+                   
+                  <button class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></button>
                     </div>
-                    <nav class="nav-links" id="nav-links">
-                        <ul>
-                            <li class="nav-link"><a href="#">Home</a></li>
-                            <li class="nav-link"><a href="#">Products</a></li>
-                            <li class="nav-link"><a href="#">About</a></li>
-                            <class class="nav-link">
-                                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-                            </class>
-                        </ul>
-                    </nav>
+                <div class="nav-links" id="nav-links">
+                    <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li ><a href="fresh.html">Fresh</a></li>
+                     <li><a href="aboutus.html">About Us</a></li>
+                     <a href=""><i class="fa-brands fa-facebook"></i></a>
+                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                     <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                  </ul>
                 </div>
-            </div>
+               </div>
+             </nav>
         </header>
 
 
         <!-- MAIN HERE -->  
         <main>
+            <!-- Home -->
+            <section class="home" id="home">
+                <div class="home-text">
+                    <span>Welcome To</span>
+                    <h1>Bountifully Healthy <br>Options!</h1>
+                    <p>Our fruits are grown in the nutrient-rich soil of Carlsbad <br>
+                     that mantains the sweetness and freshess of our enriching fruits!</p>
+                    <a href="fresh.html" class="btn">Craft a drink!</a>
+                </div>
+            </section>
+            <h1>Fruits</h1>
+            <section class="cards">
+                
+                <div class="card">
+                    <picture>
+                        <img src="./pictures/orange.png" alt="orange">
+                    </picture>
+                    <div class="content">
+                        <h3>Orange</h3>
+                        <p>The orange is a delicacy in the valley, with its juiceness, freshness
+                            that melts your mouth</p>
+                    </div>
+                </div>
+                <div class="card canberry">
+                    <picture>
+                        <img src="./pictures/cranberies.png" alt="cranberies">
+                    </picture>
+                    <div class="content">
+                        <h3>Orange</h3>
+                        <p>The canberry is a delicacy in the valley, with its juiceness, freshness
+                            that melts your mouth</p>
+                    </div>
+                </div>
 
+                <div class="card mango">
+                    <picture>
+                        <img src="./pictures/cranberies.png" alt="cranberies">
+                    </picture>
+                    <div class="content">
+                        <h3>Orange</h3>
+                        <p>The mango is a delicacy in the valley, with its juiceness, freshness
+                            that melts your mouth</p>
+                    </div>
+                </div>
+
+                <div class="card banana">
+                    <picture>
+                        <img src="./pictures/cranberies.png" alt="cranberies">
+                    </picture>
+                    <div class="content">
+                        <h3>Orange</h3>
+                        <p>The mango is a delicacy in the valley, with its juiceness, freshness
+                            that melts your mouth</p>
+                    </div>
+                </div>
+
+                <div class="card avocado">
+                    <picture>
+                        <img src="./pictures/cranberies.png" alt="cranberies">
+                    </picture>
+                    <div class="content">
+                        <h3>Orange</h3>
+                        <p>The mango is a delicacy in the valley, with its juiceness, freshness
+                            that melts your mouth</p>
+                    </div>
+                </div>
+
+                <div class="card cherry">
+                    <picture>
+                        <img src="./pictures/cranberies.png" alt="cranberies">
+                    </picture>
+                    <div class="content">
+                        <h3>Orange</h3>
+                        <p>The mango is a delicacy in the valley, with its juiceness, freshness
+                            that melts your mouth</p>
+                    </div>
+                </div>
+
+
+
+
+
+            </section>
 
 
 
@@ -65,30 +146,26 @@
         </main>
         <!-- FOOTER HERE -->   
         <footer>
-            <div class="top">
-           
-                <div class="logo-image">
+         
+            
                     <picture>
                     <img src="pictures/logo-image.png" alt="logo">
                 </picture>
-                </div>
+               
 
-                <div class="footer-text-address">
                 <h3>Bountiful Foods </h3>
                 <p> Carlsbad, California</p>
-                </div>
+                
             
-            <div class="mid">
+          
                 <p>info@Bountifulfoods.org</p>
                 <p>(208)-299-8000</p>
                 <p ><a class="map-link" href="https://www.google.com/maps/place/Rotary+Club+of+Victoria+Falls/@-17.9315803,25.827979,17z/data=!3m1!4b1!4m5!3m4!1s0x194fe59ffe345c85:0xb5dd013a232fd060!8m2!3d-17.9315803!4d25.8301677">Link to Map</a></p>
-                </div>
-            </div>
+                
 
-            <div class="end">
             <p>Days since last visit: <span id="visit"></span></p>
                 &copy;<span id="fullYear"></span> Bountiful Foods  | <span id="lastMod"></span>
-            </div>
+           
         </footer>
         <!-- JAVASCRIPT LINKS HERE -->  
         <script src="js/main.js" async defer></script>

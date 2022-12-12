@@ -1,40 +1,64 @@
-@media only screen and (min-width: 50rem){
+@media only screen and (min-width: 55rem){
 
-    /* style the image */
-    .nav-header img{
-        width: 80px;
-        padding-top: 2.5rem;
-    }
+ 
     /* stop displaying the nav button/ toggle */
     .nav-toggle {
-        display: none;
-      }
-    /* display the nav bar vertically as a block */
-      .nav-header {
-        display: block;
-      }
-    /* display the flex as a row */
-      .flex-nav {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: left;
-        padding: 0 40px;
-        
-      }
-    /* style the nav links  */
-      .nav-links {
-        height: auto;
-      }
-    /* style the ul */
-      ul {
-        text-align: center;
-      }
-    /* display the links as a block */
-      .nav-link {
-        display: inline-block;
-        border-bottom: none;
-      }
-    
+      display: none;
+    }
+
+  /* display the flex as a row */
+ .nav-items {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: right;
+      padding: 1px 60px;
+      margin-top: 1rem;
+    }
+/* display the logo as flex   */
+.nav-header{
+   display: flex;
+   flex-direction: row;
+   height: auto;
+}
+  /* style the nav links  */
+    .nav-links {
+      height: auto;
+   
+    }
+  /* style the ul */
+    ul { text-align: center;}
+
+  /* display the links as a block */
+    ul li {
+      display: inline-block;
+      border-bottom: none;
+    }
+
+
+
+  /* STYLE THE HOME PORTION */
+  .home-text {margin: 12rem;}
+
+  .home-text span {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  
+  }
+  .home-text h1 {font-size: 3rem;}
+/* style the paragraph */
+.home-text p {
+  font-size: 1.2rem;
+  font-weight: 500;
+
+}
+
+
+
+  /*  STYLE THE FOOTER  */
+
+
     
 
 

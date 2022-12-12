@@ -1,5 +1,16 @@
 @media only screen and (min-width: 70rem){
 
+ /* display the flex as a row */
+ .nav-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 100px;
+    margin-top: 1rem;
+  }
+
+
 }/* END OF MEDIA QUERY */
 
 

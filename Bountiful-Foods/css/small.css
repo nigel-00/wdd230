@@ -11,86 +11,212 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box;
     box-sizing: border-box; 
+    scroll-padding-top: 2rem;
     }
 /* STYLE THE BODY */
 body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
+    background: url(../pictures/fruit-background.webp);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
    
 }
 
 /* STYLE THE HEADER */
-.container {
-	max-width: 1100px;
-	margin: 0 auto;
-	padding: 20px 30px;
+
+
+/* style the nav */
+nav {
+	padding: 10px 30px;
+  background-color:  #751f1c ;
+	position: relative;;
+	width: 100%;
   }
 
-  /* style the image */
-  .nav-header img{
-	width: 60px;
-  }
-  /* syle the a tags */
-  a {
-	color: white;
-	text-decoration: none;
+nav img{
+  width: 100%;
+  margin: auto;
+}
+/* add padding and color to the a tags */
+a{
+  color:#d2fefe;
 	padding: 8px;
   }
-  /* style the nav links */
-  .nav-link {
+a .fa-facebook:hover{
+  color:  #3c5a99;
+}
+
+a .fa-instagram:hover{
+  color:#E1306C;
+}
+
+a .fa-youtube:hover{
+  color:#FF0000;
+}
+
+/*  add space between list items*/
+ ul li {
 	list-style: none;
 	margin: 5rem 0;
 	width: 8rem;
-	
   }
-  .nav-link a i{
-	font-size: 1.5em;
-  }
-  .nav-link a i:first-child:hover{
-	color:#00ae66;
-  }
-
-  header ul li a:hover{
-	border-bottom: 2px solid #2f3226 ;
-  }
-  
-  /* style the navbar */
-  .navbar {
-	background-color:  #751f1c ;
-	position: fixed;
-	width: 100%;
-  }
-  /* style flex nav */
-  .flex-nav {
+/* increase the size of the social media links */
+ul a i{ font-size: 1.5rem;}
+/* add hover effect to the list items */
+ul li a:hover{ border-bottom: 2px solid #2f3226;}
+/* make the logo and dropdown button display flex */
+.nav-items {
 	display: flex;
 	flex-direction: column;
+  width: 100%;
   }
-  
-  /* style the nav header */
-  .nav-header {
+/* add space between logo and dropdown button */
+.nav-header {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: left;
+  height: auto;
+ 
+  
   }
-  /* style the navbar button/ toggle */
-  .nav-toggle {
+/* style the dropdown button */
+.nav-toggle {
 	border: transparent;
 	background: transparent;
-	color: white;
+	color: #d2fefe;
 	font-size: 1.5rem;
   }
-  
+/*  initially hide the navlinks if dropdown menu is not clicked */
   .nav-links {
 	height: 0;
 	overflow: hidden;
   }
-  
-  .nav-open {
+/* set the width and height if the dropdown button is clicked */
+ .nav-open {
 	width:100%;
 	height: 100vh;
   }
-  
-  
 
-/* style the footer */
+/* STYLE THE MAIN  */
+/* syle the home portion */
+.home {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: url(../pictures/home-pic.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  gap: 1rem;
+}
+/* style the home text */
+.home-text {
+  flex: 1 1 17rem;
+  margin: 5rem;
+  margin-bottom: 12rem;
+  color: #081b54; 
+}
+/* style the home text span */
+.home-text span {
+  font-size: 1rem;
+  font-weight: 550;
+}
+/* style the h1 */
+.home-text h1 {
+  font-size: 2rem;
+  font-weight: 800;
  
+}
+/* style the paragraph */
+.home-text p {
+  font-size: 1rem;
+  margin: 0.5rem 0 1.4rem;
+  font-weight: 550;
+}
+/* style the button  */
+.btn {
+  padding: 10px 20px;
+  border: 2px solid #751f1c;
+  border-radius: 40px;
+  color: #081b54;
+  font-weight: 450;
+}
+.btn:hover {
+  letter-spacing: 2px;
+  color: #fff;
+  background: #751f1c;
+}
+
+/* STYLE THE FRUIT CARDS */
+.cards{
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+}
+.cards h1{
+  margin: 1rem;
+}
+
+div.card{
+  width: 250px;
+  height: 55vh;
+  background-color: #ffd7b5;
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+div.card picture{
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+}
+
+div.card picture img{
+  width: 100%;
+  height: 250px;
+  background-color: #fb8c0d;
+}
+
+div.card .content{
+  text-align: left;
+  padding: 10px;
+  color: #31525B;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+div.canberry picture img{
+  background: #b80e15;
+}
+
+div.canberry{
+  background-color:#d46b6c;
+}
+
+
+
+
+
+
+
+
+/* STYLE THE FOOTER */
+ 
+footer{
+  margin: 0 auto;
+	padding: 10px 30px;
+  background-color:  #751f1c ;
+	position: relative;
+	width: 100%;
+  text-align: center;
+}
+
+footer img{
+  width: 150px;
+}
