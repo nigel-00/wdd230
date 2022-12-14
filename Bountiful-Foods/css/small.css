@@ -21,6 +21,7 @@ body {
     background-size: cover;
     height: 100vh;
     background-position: center;
+    letter-spacing: 2px;
    
 }
 
@@ -62,6 +63,15 @@ a .fa-youtube:hover{
 	margin: 5rem 0;
 	width: 8rem;
   }
+
+
+ul li.active a {
+  background-color: #d2fefe ;
+  color: #2f3226;
+ 
+}
+
+
 /* increase the size of the social media links */
 ul a i{ font-size: 1.5rem;}
 /* add hover effect to the list items */
@@ -157,7 +167,9 @@ ul li a:hover{ border-bottom: 2px solid #2f3226;}
   font-weight: 800;
   font-size: 2.5rem;
   color: #081b54;
+
 }
+/* style the fruit content */
 .fruit-container{
   width: 100%;
   margin: 0 auto;
@@ -167,23 +179,28 @@ ul li a:hover{ border-bottom: 2px solid #2f3226;}
   align-items: center;
   background:#d6f8f9;
   line-height: 1.5;
+ 
 }
+
 .fruit-row{
  display: flex;
  flex-wrap:wrap;
  align-items: center;
  justify-content: space-between;
+ 
 }
+/* style the cards */
 .card{
  display: flex;
  flex:1 1 20rem;
- margin: 10px 20px;
+ margin: 10px 10px;
  background-color:#e9f0ce;
  box-shadow: 0 0 15px rgba(0,0,0,0.4);
  flex-direction: column;
  align-items: center;
  align-self:normal;
- border-radius: 20px;
+
+
 }
 
 .fruit-content{
@@ -202,25 +219,232 @@ ul li a:hover{ border-bottom: 2px solid #2f3226;}
   width: 100%;
   height: 50%;
 }
-
+/* apply background color to different fruits */
 .avocado picture{ background-color:#3b362c ;   }
 .banana picture{ background-color:#fad82d ;   }
-.orange picture{ background-color:#fe9004 ;   }
+.berry-apples picture{ background-color:#fe9004 ;   }
 .mango picture{ background-color:#df3427 ;   }
 .cranberry picture{ background-color: #cb0402;   }
-.tart-cherry picture{ background-color:#7b0308 ;  }
+.berry-mix picture{ background-color:#7b0308 ;  }
 
+.berry-apples picture img{
+  width: 500px;
+ 
+}
+/* style the fruits image */
 .card picture img{
-  max-width: 200px;
+  max-width: 220px;
   height: auto;
 }
 
+/* STYLE THE CALL TO ACTION  */
+.drink{
+  width: 75%;
+  height: 50%;
+  margin: 0 auto;
+  background-color: #e9f0ce;
+  padding: 1rem;
+  
+}
+/* style the drink content */
+.drink-content{
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  text-align: left;
+  color: #081b54;
+}
+/* style the image of the drink */
+.drink .drink-content img{
+  width: 400px;
+  max-width: 40%;
+  height: auto;
+
+}
+/* style the drink text */
+.drink-text{
+  width: 100%;
+  padding: 0 10px;
+}
+/* style the drink text h1 */
+.drink-text h1{
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-size: 3rem;
+  font-weight: 500;
+}
+/* style the drink text h5 */
+.drink-text h5{
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+/* style the drink text */
+.drink-text p{
+  line-height: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 45px;
+}
+
+/* style the fruit button */
+.fruit-btn{
+  padding: 15px;
+  border-radius: 20px;
+  background-color: #751f1c;
+  color:#d6f8f9;
+  border: none;
+}
+/* apply hover effect on the button */
+.fruit-btn:hover{
+  padding: 15px 25px;
+}
+
+.total-drinks{
+  padding: 40px 20px;
+  margin-top: 10px;
+  width: 60%;
+  height: auto;
+  text-align: left;
+  border-radius: 20px;
+  border: 1px solid #751f1c;
+}
+.total-drinks:hover{
+  background-color: #751f1c;
+  width:80%;
+  color:#d2fefe;
+}
+
+.total-drinks h4{
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+/* STYLE THE AREA  */
+
+.area-info{
+width: 97%;
+height: auto;
+display: grid;
+grid-template-columns:1fr;
+margin: 10px 10px;
+background-color: #e9f0ce;
 
 
+}
+.area-info .left{
+overflow: hidden;
+}
 
+.area-info .left img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+  
+.area-info.right{
+    display: flex;
+    align-self: center;
+  
+}
 
+.area-info .right .content{
+  margin: 0;
+  text-align: center;
+}
+.area-info .right .content p{
+  padding-bottom: 15px;
+  padding: 20px;
+}
 
+/* STYLE THE FRESH PAGE */
+#fresh-card{
+  width: 80%;
+  margin: 20px auto;
+}
+#fresh-box{
+  display: block;
+  background-color: #fff;
+}
+#fresh-left{
+  padding: 40px;
+  text-align: left;
+  color:#081b54;
+  background-attachment: #e9f0ce;
 
+}
+#fresh-right{
+  padding: 40px;
+  background:#e9f0ce;
+  color: black;
+}
+.fresh-right{
+  background:#e9f0ce;
+  color: black;
+}
+#fresh-card h1{
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#input-row{
+  display: grid;
+  margin-bottom: 20px;
+}
+.input-group{
+ padding-top: 1rem;
+}
+.input-group input, select{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: none;
+  padding-top: 10px;
+  padding-bottom: 5px;;
+}
+#fresh-left textarea{
+width: 100%;
+border: 1px solid #ccc;
+outline: none;
+padding: 10px;
+box-sizing: border-box;
+}
+#fresh-left label{
+  margin-bottom: 6px;
+  display: block;
+}
+#fresh-left button{
+  background: #002E5D;
+  width: 100px;
+  border: none;
+  outline: none;
+  color:#D9D8D5;
+  border-radius: 10px;
+  height: 35px;
+  margin-top: 30px;
+}
+#fresh-left h3{
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+#fresh-right h3{
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+#fresh-right tr td:first-child{
+  padding-right: 40px;
+  padding-top: 1rem;
+}
+#fresh-right tr td:last-child{
+  text-align: left;
+  padding-top: 1rem;
+}
+
+#fresh-right td{
+  padding-bottom: .2rem;
+}
 
 
 /* STYLE THE FOOTER */

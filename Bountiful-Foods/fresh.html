@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+
+<html lan="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bountiful Foods Fresh Page Build </title>
+        <meta name="description" content="Bountiful Foods Home Page Build for Melokuhle N Dube in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+        <meta name="author" content="Melokuhle Nigel Dube">
+        <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!-- Google font used in the document -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <!-- favicon link -->
+        <link rel="shortcut icon" href="pictures/favicon.ico">
+        <!--font awesome kit -->
+        <script src="https://kit.fontawesome.com/0f789dc494.js" crossorigin="anonymous"></script>
+        <!-- STYLE SHEETS -->
+        <link href="css/normalize.css" rel="stylesheet">
+        <!-- phone-default -->
+        <link href="css/small.css" rel="stylesheet">
+        <!-- enhance-tablet -->
+        <link href="css/medium.css" rel="stylesheet">
+        <!-- enhance-desktop -->
+        <link href="css/large.css" rel="stylesheet"> 
+            
+    </head>
+    <body>
+        <!-- HEADER HERE -->  
+        <header>
+            <nav>
+                <div class="nav-items">
+                  <div class="nav-header">
+                    <picture>
+                        <img src="pictures/logo-image.png" alt="logo" loading="lazy">
+                    </picture>
+                   
+                  <button class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></button>
+                    </div>
+                <div class="nav-links" id="nav-links">
+                    <ul>
+                     <li ><a href="index.html">Home</a></li>
+                     <li class="active"><a href="fresh.html">Fresh</a></li>
+                     <li><a href="aboutus.html">About Us</a></li>
+                     <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                     <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                     <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                  </ul>
+                </div>
+               </div>
+             </nav>
+        </header>
+        <!-- MAIN HERE -->
+        <main>
+            
+            <div id="fresh-card">
+                <h1>Craft your Drink</h1>
+                <div id="fresh-box">
+                    <div id="fresh-left">
+                        <h3>Send your request</h3>
+
+                        <form id="form-submit">
+                            <div id="input-row">
+                
+                                <div class="input-group">
+                                <label >Name*<input type="text" placeholder="Name" id="first-name" required></label>
+                                </div>
+                
+                                <div class="input-group">
+                                    <label >Phone*<input type="tel" placeholder="208773453678" id ="phone-number" required></label>
+                                </div>
+                            
+                                <div class="input-group">
+                                    <label>Email*<input type="email" placeholder="youremail@gmail.com" id="email"  required></label>
+                                </div>
+
+                                <div class="input-group">
+                                    <label>Order Date*<input type="date" placeholder="2018-07-22" id="order-date"  ></label>
+                                </div>
+                                
+                                <div class="specialty-combo">
+                                    <label class="fruit-combo">First<select id="first-fruit" name="fruit-one"></select></label>
+                                    <label class="fruit-combo">Second<select id="sec-fruit" name="fruit-two"></select></label>
+                                    <label class="fruit-combo">Third<select id="third-fruit" name="fuit-three"></select></label>
+                                </div>
+                                <div>
+
+                        </div>
+                            <label>Special Instructions<textarea name="message"  rows="5" placeholder="Your message" id="instructions"></textarea></label>
+                            
+                          
+                        <button onclick="getOption()"> Check option </button>
+                
+                            
+                        </form>
+                    </div>
+                </div>
+
+                
+                    <div class="fresh-right" id="fresh-right">
+                        <h3>Specialty Drink</h3>
+                    
+                        <table>
+                            <tr>
+                                <td> First Name: </td>
+                                <td><span class = "name-output">0</span></td>
+                            </tr>
+
+                            <tr>
+                                <td> Email: </td>
+                                <td><span class = "email-output"></span></td>
+                            </tr>
+
+                            <tr>
+                                <td> Phone: </td>
+                                <td><span class = "phone-output"></span></td>
+                            </tr>
+
+                            <tr>
+                                <td> Fruit 1: </td>
+                                <td><span class = "fruit-output1"></span></td>
+                            </tr>
+
+                            <tr>
+                                <td> Fruit 2: </td>
+                                <td><span class = "fruit-output2"></span></td>
+                            </tr>
+            
+                            <tr>
+                                <td> Fruit 3: </td>
+                                <td><span class = "fruit-output3"></span></td>
+                            </tr>
+
+                            <tr>
+                                <td> Order Date: </td>
+                                <td><span class = "date-output"></span></td>
+                            </tr>
+
+                            <tr>
+                                <td> Message: </td>
+                                <td><span class = "special"></span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Carbohydrates</td>
+                                <td><span class="carbs">0</span></td>
+                            </tr>
+                
+                         
+                            <tr>
+                                <td>Protein</td>
+                                <td><span class="proteins">0</span></td>
+                            </tr>
+                
+                            <tr>
+                                <td>Fats</td>
+                                <td><span class="fats">0</span></td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td>Sugar</td>
+                                <td><span class="sugar">0</span></td>
+                            </tr>
+                           
+                        
+                            <tr>
+                                <td>Calories</td>
+                                <td><span class="cals">0</span></td>
+                            </tr>
+                    
+                           
+                
+                        </table>
+
+                    </div>
+                </div>
+                
+                
+                </div>
+
+        </main>  
+
+
+
+             <!-- FOOTER HERE -->   
+             <footer>
+         
+            
+                <picture>
+                <img src="pictures/logo-image.png" alt="logo">
+            </picture>
+           
+
+            <h3>Bountiful Foods </h3>
+            <p> Carlsbad, California</p>
+            
+        
+      
+            <p>info@Bountifulfoods.org</p>
+            <p>(208)-299-8000</p>
+            <p ><a class="map-link" href="https://www.google.com/maps/place/Rotary+Club+of+Victoria+Falls/@-17.9315803,25.827979,17z/data=!3m1!4b1!4m5!3m4!1s0x194fe59ffe345c85:0xb5dd013a232fd060!8m2!3d-17.9315803!4d25.8301677">Link to Map</a></p>
+            
+
+        <p>Days since last visit: <span id="visit"></span></p>
+            &copy;<span id="fullYear"></span> Bountiful Foods  | <span id="lastMod"></span>
+       
+    </footer>
+    <!-- JAVASCRIPT LINKS HERE -->  
+    <script src="js/main.js" async defer></script>
+    <script src="js/humburger.js" async defer></script>
+    <script src="js/fruitOutput.js" async defer></script>
+    <script src="js/weather.js" async defer></script>
+    <script src="js/weather.js" async defer></script>
+    
+</body>
+</html>

@@ -33,19 +33,19 @@
                 <div class="nav-items">
                   <div class="nav-header">
                     <picture>
-                        <img src="pictures/logo-image.png" alt="logo">
+                        <img src="pictures/logo-image.png" alt="logo" loading="lazy">
                     </picture>
                    
                   <button class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></button>
                     </div>
                 <div class="nav-links" id="nav-links">
                     <ul>
-                     <li><a href="index.html">Home</a></li>
+                     <li class="active"><a href="index.html">Home</a></li>
                      <li ><a href="fresh.html">Fresh</a></li>
                      <li><a href="aboutus.html">About Us</a></li>
-                     <a href=""><i class="fa-brands fa-facebook"></i></a>
-                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                     <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                     <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                     <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                     <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
                   </ul>
                 </div>
                </div>
@@ -62,7 +62,8 @@
                     <h1>Bountiful Healthy <br>Options!</h1>
                     <p>Our fruits are grown in the nutrient-rich soil of Carlsbad <br>
                      that mantains the sweetness and freshess of our enriching fruits!</p>
-                    <a href="fresh.html" class="btn">Craft a drink!</a>
+                    
+                    <button class="fruit-btn" type="button"   onclick='window.location.href="fresh.html"'>Craft a drink!</button>
                 </div>
             </section>
             <h1 class="fruit-heading">Fruits</h1>
@@ -72,7 +73,7 @@
 
                     <div class="card avocado">
                         <picture>
-                        <img src="./pictures/avocado.png" alt="avocado">
+                        <img src="./pictures/avocado.png" alt="avocado" loading="lazy">
                     </picture>
                     <div class="fruit-content">
                         <h4>Avocado</h4>
@@ -83,9 +84,9 @@
 
                     <div class="card banana">
                         <picture>
-                        <img src="./pictures/banana.png" alt="Banana">
+                        <img src="./pictures/banana.png" alt="Banana" loading="lazy">
                     </picture>
-                        <div class="fruit-content">
+                        <div class="fruit-content"> 
                             <h4>Banana</h4>
                             <p>Ever wondered what goodness is in a banana? Other than being rich in vitamin B6,
                              bananas are a good source of vitamin C, dietary fibre and manganese.</p>
@@ -94,7 +95,7 @@
 
                       <div class="card cranberry">
                         <picture>
-                        <img src="./pictures/cranberies.png" alt="cranberies">
+                        <img src="./pictures/cranberies.png" alt="cranberies" loading="lazy">
                     </picture>
                         <div class="fruit-content">
                             <h4>Cranberry</h4>
@@ -106,7 +107,7 @@
 
                       <div class="card mango">
                         <picture>
-                        <img src="./pictures/mango.png" alt="mango">
+                        <img src="./pictures/mango.png" alt="mango" loading="lazy">
                     </picture>
                         <div class="fruit-content">
                             <h4>Mango</h4>
@@ -116,31 +117,74 @@
                         </div>
                       </div>
                        
-                      <div class="card orange">
+                      <div class="card berry-apples">
                         <picture>
-                        <img src="./pictures/orange.png" alt="orange">
+                        <img src="./pictures/berry-apples.png" alt="berry-apples" loading="lazy">
                     </picture>
                         <div class="fruit-content">
-                            <h4>Orange</h4>
-                            <p>Every type of orange has more than 100% of your recommended daily amount of vitamin C.
-                            That's more than any other citrus fruit. All you have to do to get this key vitamin is peel and eat.</p>
+                            <h4>Berry Apple Drink</h4>
+                            <p>The amazing blend of berries and apples produces one of the best specialty drinks we offer. Blended with fresh fruit straight 
+                                from orchard makes it not only fresher but also healthier.
+                            </p>
                          
                         </div>
                       </div>
 
-                      <div class="card  tart-cherry">
+                      <div class="card  berry-mix">
                         <picture>
-                        <img src="./pictures/tart-cherry.png" alt="tart-cherry">
+                        <img src="./pictures/berry-mix.png" alt="berry-mix" loading="lazy">
                         </picture>
                         <div class="fruit-content">
-                            <h4>Tart Cherry</h4>
-                            <p>Research suggests that the powerful antioxidants found in tart cherries are linked to a variety of health benefits,
+                            <h4>Berry Mix Drink</h4>
+                            <p>Research suggests that the powerful blend of diffent berries are linked to a variety of health benefits,
                             including anti-inflammation, heart health, pain relief and muscle recovery.</p>
                       
                         </div>
                       </div>
 
                     </div>
+            </section>
+    
+            <section class="drink">
+                <div class="drink-content">
+                    <img src="./pictures/fruit-punch.png"  alt="mixed-fruit">
+                    <div class="drink-text">
+                      <h1>Make a drink</h1>
+                      <h5>Explore our drink mix options</h5>
+                      <p>An opportunity to craft a specialty drink with fruits of your choosing.
+                        You are truly the master of your taste.A blend of diffent fruits supply a variety of nutrients to the body!
+                      </p>
+                        <button class="fruit-btn" type="button"  onclick='window.location.href="fresh.html"'>Make a drink!</button>
+                    </div>
+                    <div class="total-drinks">
+                        <h4>Total Drinks</h4>
+                        You currently have made <span id=drink-num>4</span> drinks!
+                    </div>
+                    </div>
+             </section>
+                
+
+            <section class="area-info">
+                <div class="left">
+                        <img src="./pictures/san-diego.jpg" alt="san-diego" loading="lazy">
+                    </div>
+                    
+                    <div class="right">
+                        <div class="area-content">
+                        <p>California's second largest city and the United States' eighth largest, San Diego boasts a citywide 
+                        population of nearly 1.3 million residents and more than 3 million residents countywide. Within its borders
+                        of 4,200 sq. miles, San Diego County encompasses 18 incorporated cities and numerous other charming 
+                        neighborhoods and communities, including downtown's historic Gaslamp Quarter, Little Italy, Coronado, La Jolla, 
+                        Del Mar, Carlsbad, Escondido, La Mesa, Hillcrest, Barrio Logan and Chula Vista just to name a few.
+                        San Diego is renowned for its idyllic climate, 70 miles of pristine beaches and a dazzling array of world-class 
+                        family attractions. Popular attractions include the world-famous San Diego Zoo and San Diego Zoo Safari Park, 
+                        SeaWorld San Diego and LEGOLAND California. San Diego offers an expansive variety of things to see and do, 
+                        appealing to guests of all ages from around the world.</p>
+                    </div>
+                    </div>
+                
+               
+
             </section>
 
 
@@ -174,5 +218,11 @@
         <!-- JAVASCRIPT LINKS HERE -->  
         <script src="js/main.js" async defer></script>
         <script src="js/humburger.js" async defer></script>
+        <script src="js/fruitOutput.js" async defer></script>
+        <script src="js/weather.js" async defer></script>
+       
+    
+
+
     </body>
 </html>

@@ -53,7 +53,48 @@
   font-weight: 500;
 
 }
+/* STYLE THE CALL TO ACTION PORTION */
 
+
+.drink-content{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+/* STYLE THE ACTION  */
+
+.area-info{
+  width: 100%;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 60px 20px;
+  
+  }
+
+  /* STYLE THE FRESH PAGE */
+
+  #fresh-box{
+    display: flex;
+    background-color: #fff;
+    }
+#fresh-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+    text-align: left;
+    color:#800020;
+
+}
+#fresh-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background-color:  #751f1c;
+    color: #D9D8D5;
+    text-align: left;
+}    
 
 
   /*  STYLE THE FOOTER  */
