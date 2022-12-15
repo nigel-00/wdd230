@@ -477,8 +477,8 @@ box-sizing: border-box;
   height: auto;
   padding: 40px;
   box-shadow: 0 0 15px rgba(0,0,0,0.4);
-  color:#081b54;
-  background-color: #dae3e3;
+  color: #000;
+  background-color:#e9f0ce ;
  
 }
 .weather-card span {
@@ -556,7 +556,8 @@ iframe{
  
 footer{
   margin: 0 auto;
-	padding: 10px 30px;
+  height:auto;
+	padding: 10px;
   background-color:  #751f1c ;
 	position: relative;
 	width: 100%;

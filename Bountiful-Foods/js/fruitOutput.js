@@ -1,7 +1,7 @@
 
 
 const requestURL = './js/fresh.json';
-const  freshBtn = document.querySelector("#fresh-submit");
+const  freshBtn = document.querySelector("#fruit-submit");
 
 fetch(requestURL) 
   .then(function (response) {
@@ -16,7 +16,12 @@ fetch(requestURL)
    fruitSelection(fruits, '#third-fruit');
 
  
-   getOption();
+   freshBtn.addEventListener("click", function(){
+          getOption();
+          
+    });
+
+ 
 
   });
 
@@ -91,22 +96,22 @@ fetch(requestURL)
   document.querySelector('.fats').textContent = fats.toFixed(0);
   document.querySelector('.sugar').textContent = sugar.toFixed(0);
   document.querySelector('.cals').textContent = calories.toFixed(0);
+
    
   });
 
 
-
-    }
+}
 
 const drinks =  document.getElementById('drink-num');
-let drinksNum = window.localStorage.getItem("drinksTotal");
+          let drinksNum = window.localStorage.getItem("drinksTotal");
 
-if (drinksNum == null) {
-  drinks.textContent  = `0`;
-} else {
-    drinksNum ++
-    localStorage.setItem("lastVisitTime", drinksNum);
-}
+          if (drinksNum == null) {
+            drinks.textContent  = `0`;
+          } else {
+              drinksNum ++
+              localStorage.setItem("drinksTotal", drinksNum);
+          }
 
 
 
