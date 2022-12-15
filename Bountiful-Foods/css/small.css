@@ -91,7 +91,7 @@ ul li a:hover{ border-bottom: 2px solid #2f3226;}
 .nav-header {
 	display: flex;
 	justify-content: space-between;
-	align-items: left;
+	align-items:center;
   height: auto;
  
   
