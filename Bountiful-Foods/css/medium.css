@@ -77,10 +77,8 @@
 
   /* STYLE THE FRESH PAGE */
 
-  #fresh-box{
-    display: flex;
-    background-color: #fff;
-    }
+  #fresh-box{ display: flex;}
+
 #fresh-left{
     flex-basis: 60%;
     padding: 40px 60px;
@@ -91,13 +89,66 @@
 #fresh-right{
     flex-basis: 40%;
     padding: 40px;
-    background-color:  #751f1c;
-    color: #d2fefe;
     text-align: left;
+}    
+
+/* STYLE THE WEATHER */
+
+.weather{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items:center;
+}
+.weather-card img{
+  width: 40%;
+}
+.weather-card{
+  margin: 1px 10px 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width:500px;
+  height: 300px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+/* STYLE THE ABOUT US  */
+
+.main-card{
+  
+  max-width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2rem;
+}
+
+.main-card .content{
+  padding: .5rem; 
+  }  
+
+#contact-us-box{
+  display: flex;
+ 
+  }
+#contact-us-left{
+  flex-basis: 60%;
+  padding: 40px 60px;
+  text-align: left;
+  
+
+}
+#contact-us-right{
+  flex-basis: 40%;
+  padding: 40px;
+  text-align: left;
 }    
 
 
   /*  STYLE THE FOOTER  */
+
 
 
     

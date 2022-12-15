@@ -102,7 +102,7 @@ const drinks =  document.getElementById('drink-num');
 let drinksNum = window.localStorage.getItem("drinksTotal");
 
 if (drinksNum == null) {
-  drinks.textContent  = "0";
+  drinks.textContent  = `0`;
 } else {
     drinksNum ++
     localStorage.setItem("lastVisitTime", drinksNum);
