@@ -94,18 +94,24 @@ fetch(requestURL)
    
   });
 
-  // fruitOneInfo.nutritions.carbohydrates
-  // const fruit1 = document.getElementById("first-fruit").value;
-  // const fruit2 = document.getElementById("sec-fruit").value;
-  // const fruit3 = document.getElementById("third-fruit").value;
 
-  
 
     }
 
-   
-  
+const drinks =  document.getElementById('drink-num');
+let drinksNum = window.localStorage.getItem("drinksTotal");
 
+if (drinksNum == null) {
+  drinks.textContent  = "0";
+} else {
+    drinksNum ++
+    localStorage.setItem("lastVisitTime", drinksNum);
+}
+
+
+
+
+  
 
  
  
