@@ -10,18 +10,14 @@ fetch(requestURL)
   .then(function (jsonObject) {
     const fruits = jsonObject['fruits'];
 
-  
    fruitSelection(fruits, '#first-fruit');
    fruitSelection(fruits, '#sec-fruit');
    fruitSelection(fruits, '#third-fruit');
 
- 
-   freshBtn.addEventListener("click", function(){
+    freshBtn.addEventListener("click", function(){
           getOption();
-          
-    });
-
- 
+     });
+   
 
   });
 
@@ -98,21 +94,28 @@ fetch(requestURL)
   document.querySelector('.cals').textContent = calories.toFixed(0);
 
    
-  });
-
+  });  
 
 }
 
-const drinks =  document.getElementById('drink-num');
-          let drinksNum = window.localStorage.getItem("drinksTotal");
 
-          if (drinksNum == null) {
-            drinks.textContent  = `0`;
-          } else {
-              drinksNum ++
-              localStorage.setItem("drinksTotal", drinksNum);
-          }
+let count = 0;
+const fruitBtn = document.getElementById("fruit-submit");
+const drinks = document.getElementById("drink-num"); 
+let drinksNum = window.localStorage.getItem("drinksTotal");
 
+fruitBtn.onclick = function () {
+       count++;
+       
+     if (drinksNum == null) {
+      drinks.textContent  = `0`;
+    } else {
+       count ++
+       drinks.textContent = count 
+    }
+    localStorage.setItem("drinksTotal", drinks);
+
+}
 
 
 

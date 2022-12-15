@@ -462,7 +462,7 @@ box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 10px;
-  height: auto;
+  height: 100vh;
   margin: 10px;
   background-color: #e9f0ce;
 
