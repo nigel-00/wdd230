@@ -24,8 +24,9 @@
   /* style the nav links  */
     .nav-links {
       height: auto;
-   
     }
+
+  
   /* style the ul */
     ul { text-align: center;}
 
@@ -33,6 +34,7 @@
     ul li {
       display: inline-block;
       border-bottom: none;
+      height: auto;
     }
 
 
