@@ -481,9 +481,9 @@ box-sizing: border-box;
   width: 100%;
   height: auto;
   padding: 40px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
   color: #000;
-  background-color:#e9f0ce ;
+  background-color:#e5ead2 ;
  
 }
 .weather-card span {
