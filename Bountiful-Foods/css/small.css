@@ -562,7 +562,7 @@ iframe{
 footer{
   margin: 0 auto;
   height:auto;
-	padding: 10px;
+	padding: 5px;
   background-color:  #751f1c ;
 	position: relative;
 	width: 100%;
@@ -573,6 +573,9 @@ footer{
 footer img{
   width: 250px;
   
+}
+.low{
+  padding-bottom: 20px;
 }
 .low img{
 width: 25px;
