@@ -101,7 +101,11 @@ ul li a:hover{ border-bottom: 2px solid #2f3226;}
 	border: transparent;
 	background: transparent;
 	color: #d2fefe;
-	font-size: 1.5rem;
+  }
+
+  .nav-toggle img{
+    width: 50px;
+
   }
 /*  initially hide the navlinks if dropdown menu is not clicked */
   .nav-links {
@@ -568,4 +572,7 @@ footer{
 footer img{
   width: 250px;
   
+}
+.low img{
+width: 25px;
 }
